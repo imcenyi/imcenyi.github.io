@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Hex • Posts by &#34;程序开发&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2023-03-31T16:39:59.000Z</updated>
+    <category term="C++" />
+    <category term="程序开发" />
+    <category term="学习笔记" />
+    <entry>
+        <id>http://example.com/2023/04/01/c++/</id>
+        <title>c++</title>
+        <link rel="alternate" href="http://example.com/2023/04/01/c++/"/>
+        <content type="html">&lt;h2 id=&#34;引用的概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的概念&#34;&gt;#&lt;/a&gt; 引用的概念&lt;/h2&gt;
+&lt;p&gt;某个变量的引用，&lt;mark&gt;等价于&lt;/mark&gt;这个变量，相当于这个变量的&lt;mark&gt;别名&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;引用 (&amp;amp;) 语法如下&lt;/p&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs C++&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; n=&lt;span class=&#34;hljs-number&#34;&gt;4&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &amp;amp;r=n;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;对于 n 的运算，r 同样也会做相同的运算。&lt;br&gt;
+反过来，对于 r 的运算，同样也会作用到 n 上。&lt;/p&gt;
+&lt;p&gt;如&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs cpp&#34;&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; n=&lt;span class=&#34;hljs-number&#34;&gt;7&lt;/span&gt;;&lt;br&gt;&lt;span class=&#34;hljs-type&#34;&gt;int&lt;/span&gt; &amp;amp;r=n;&lt;br&gt;r=&lt;span class=&#34;hljs-number&#34;&gt;4&lt;/span&gt;;     &lt;span class=&#34;hljs-comment&#34;&gt;//这一步运算也作用到了n上&lt;/span&gt;&lt;br&gt;cout&amp;lt;&amp;lt;r;&lt;br&gt;cout&amp;lt;&amp;lt;n;&lt;br&gt;n=&lt;span class=&#34;hljs-number&#34;&gt;5&lt;/span&gt;;     &lt;span class=&#34;hljs-comment&#34;&gt;//这一步运算也作用到了r上&lt;/span&gt;&lt;br&gt;cout&amp;lt;&amp;lt;r;  &lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;最后 r=n=5，可见引用运算同步。&lt;/p&gt;
+&lt;p&gt;![[Pasted image 20230329185953.png]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意，引用是从一而终的，不可以引用其他变量&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;引用只能引用&lt;mark&gt;变量&lt;/mark&gt;，不能引用&lt;s&gt;常量和表达式&lt;/s&gt;&lt;/strong&gt;&lt;br&gt;
+！[[Pasted image 20230329185919.png]]&lt;br&gt;
+&lt;strong&gt; 这里 r1=b 这一句，并不是让 r1 引用 b，而是给 r1 赋了 b 的值&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;引用的作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的作用&#34;&gt;#&lt;/a&gt; 引用的作用&lt;/h2&gt;
+&lt;p&gt;写一个交换整型变量的值。&lt;br&gt;
+![[Pasted image 20230329190153.png]]&lt;br&gt;
+ 实际上 n1，n2，并不会改变。&lt;/p&gt;
+&lt;p&gt;但是引用可以很好解决这个问题。&lt;br&gt;
+![[Pasted image 20230329190352.png]]&lt;br&gt;
+ 在这里由与附给形参的类型是引用，所以 a，b 与 n1，n2 等价。&lt;br&gt;
+在子函数里 ab 所做的运算，n1n2 同样也会执行，所以 n1n2 会改变。&lt;/p&gt;
+&lt;p&gt;返回值是个引用，则可以对于返回值进行赋值。&lt;br&gt;
+![[Pasted image 20230329190646.png]]&lt;/p&gt;
+&lt;h2 id=&#34;常引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常引用&#34;&gt;#&lt;/a&gt; 常引用&lt;/h2&gt;
+&lt;p&gt;![[Pasted image 20230329190857.png]]&lt;br&gt;
+&lt;strong&gt; 注意，不可以通过常引用来改变引用的内容（可以用其他方式）。&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="C++" />
+        <category term="程序开发" />
+        <category term="学习笔记" />
+        <updated>2023-03-31T16:39:59.000Z</updated>
+    </entry>
+</feed>

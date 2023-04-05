@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hex",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2023/04/01/c++/",
+            "url": "http://example.com/2023/04/01/c++/",
+            "title": "c++",
+            "date_published": "2023-03-31T16:39:59.000Z",
+            "content_html": "<h2 id=\"引用的概念\"><a class=\"markdownIt-Anchor\" href=\"#引用的概念\">#</a> 引用的概念</h2>\n<p>某个变量的引用，<mark>等价于</mark>这个变量，相当于这个变量的<mark>别名</mark></p>\n<p>引用 (&amp;) 语法如下</p>\n<figure class=\"highlight c++\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs C++\"><span class=\"hljs-type\">int</span> n=<span class=\"hljs-number\">4</span>;<br><span class=\"hljs-type\">int</span> &amp;r=n;<br></code></pre></td></tr></table></figure>\n<p>对于 n 的运算，r 同样也会做相同的运算。<br>\n反过来，对于 r 的运算，同样也会作用到 n 上。</p>\n<p>如</p>\n<figure class=\"highlight cpp\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs cpp\"><span class=\"hljs-type\">int</span> n=<span class=\"hljs-number\">7</span>;<br><span class=\"hljs-type\">int</span> &amp;r=n;<br>r=<span class=\"hljs-number\">4</span>;     <span class=\"hljs-comment\">//这一步运算也作用到了n上</span><br>cout&lt;&lt;r;<br>cout&lt;&lt;n;<br>n=<span class=\"hljs-number\">5</span>;     <span class=\"hljs-comment\">//这一步运算也作用到了r上</span><br>cout&lt;&lt;r;  <br></code></pre></td></tr></table></figure>\n<p>最后 r=n=5，可见引用运算同步。</p>\n<p>![[Pasted image 20230329185953.png]]</p>\n<p><strong>注意，引用是从一而终的，不可以引用其他变量</strong><br>\n<strong>引用只能引用<mark>变量</mark>，不能引用<s>常量和表达式</s></strong><br>\n！[[Pasted image 20230329185919.png]]<br>\n<strong> 这里 r1=b 这一句，并不是让 r1 引用 b，而是给 r1 赋了 b 的值</strong></p>\n<h2 id=\"引用的作用\"><a class=\"markdownIt-Anchor\" href=\"#引用的作用\">#</a> 引用的作用</h2>\n<p>写一个交换整型变量的值。<br>\n![[Pasted image 20230329190153.png]]<br>\n 实际上 n1，n2，并不会改变。</p>\n<p>但是引用可以很好解决这个问题。<br>\n![[Pasted image 20230329190352.png]]<br>\n 在这里由与附给形参的类型是引用，所以 a，b 与 n1，n2 等价。<br>\n在子函数里 ab 所做的运算，n1n2 同样也会执行，所以 n1n2 会改变。</p>\n<p>返回值是个引用，则可以对于返回值进行赋值。<br>\n![[Pasted image 20230329190646.png]]</p>\n<h2 id=\"常引用\"><a class=\"markdownIt-Anchor\" href=\"#常引用\">#</a> 常引用</h2>\n<p>![[Pasted image 20230329190857.png]]<br>\n<strong> 注意，不可以通过常引用来改变引用的内容（可以用其他方式）。</strong></p>\n",
+            "tags": [
+                "C++",
+                "程序开发",
+                "学习笔记"
+            ]
+        },
+        {
+            "id": "http://example.com/2023/03/31/hello-world/",
+            "url": "http://example.com/2023/03/31/hello-world/",
+            "title": "Hello World",
+            "date_published": "2023-03-31T10:58:55.052Z",
+            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"markdownIt-Anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"markdownIt-Anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo new <span class=\"hljs-string\">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"markdownIt-Anchor\" href=\"#run-server\">#</a> Run server</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo server<br></code></pre></td></tr></table></figure>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"markdownIt-Anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo generate<br></code></pre></td></tr></table></figure>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"markdownIt-Anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><code class=\"hljs bash\">$ hexo deploy<br></code></pre></td></tr></table></figure>\n<p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
+            "tags": []
+        }
+    ]
+}
