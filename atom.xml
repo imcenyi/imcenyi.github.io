@@ -16,7 +16,7 @@
     </entry>
     <entry>
         <id>http://example.com/2023/04/01/1%20%E5%BC%95%E7%94%A8/</id>
-        <title>c++</title>
+        <title>c++/引用</title>
         <link rel="alternate" href="http://example.com/2023/04/01/1%20%E5%BC%95%E7%94%A8/"/>
         <content type="html">&lt;h2 id=&#34;引用的概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的概念&#34;&gt;#&lt;/a&gt; 引用的概念&lt;/h2&gt;
 &lt;p&gt;某个变量的引用，&lt;mark&gt;等价于&lt;/mark&gt;这个变量，相当于这个变量的&lt;mark&gt;别名&lt;/mark&gt;&lt;/p&gt;
