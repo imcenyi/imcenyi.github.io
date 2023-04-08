@@ -8,8 +8,6 @@
         <pubDate>Sat, 01 Apr 2023 00:39:59 +0800</pubDate>
         <lastBuildDate>Sat, 01 Apr 2023 00:39:59 +0800</lastBuildDate>
         <category>C++</category>
-        <category>程序开发</category>
-        <category>学习笔记</category>
         <category>语言学习</category>
         <category>笔记</category>
         <item>
@@ -20,7 +18,11 @@
             <category>语言学习</category>
             <category>笔记</category>
             <pubDate>Sat, 01 Apr 2023 00:39:59 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;1. 引用&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;作者-ethantzy链接-httpstzy1997comarticleshexo1604来源-唐志远の博客著作权归作者所有-商业转载请联系作者获得授权非商业转载请注明出处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#作者-ethantzy链接-httpstzy1997comarticleshexo1604来源-唐志远の博客著作权归作者所有-商业转载请联系作者获得授权非商业转载请注明出处&#34;&gt;#&lt;/a&gt; 作者: Ethan.Tzy&lt;br&gt;
+ 链接: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90enkxOTk3LmNvbS9hcnRpY2xlcy9oZXhvMTYwNC8=&#34;&gt;https://tzy1997.com/articles/hexo1604/&lt;/span&gt;&lt;br&gt;
+ 来源：唐志远の博客&lt;br&gt;
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/h2&gt;
+&lt;p&gt;1. 引用&lt;/p&gt;
 &lt;h2 id=&#34;引用的概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的概念&#34;&gt;#&lt;/a&gt; 引用的概念&lt;/h2&gt;
 &lt;p&gt;某个变量的引用，&lt;mark&gt;等价于&lt;/mark&gt;这个变量，相当于这个变量的&lt;mark&gt;别名&lt;/mark&gt;&lt;/p&gt;
 &lt;p&gt;引用 (&amp;amp;) 语法如下&lt;/p&gt;
