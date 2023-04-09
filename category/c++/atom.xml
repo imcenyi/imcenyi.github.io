@@ -22,8 +22,8 @@
 &lt;p&gt;&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852656.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意，引用是从一而终的，不可以引用其他变量&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;引用只能引用&lt;mark&gt;变量&lt;/mark&gt;，不能引用&lt;s&gt;常量和表达式&lt;/s&gt;&lt;/strong&gt;&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852848.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这里 r1=b 这一句，并不是让 r1 引用 b，而是给 r1 赋了 b 的值&lt;/strong&gt;&lt;/p&gt;
+&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852848.png&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+&lt;strong&gt; 这里 r1=b 这一句，并不是让 r1 引用 b，而是给 r1 赋了 b 的值&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;引用的作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的作用&#34;&gt;#&lt;/a&gt; 引用的作用&lt;/h2&gt;
 &lt;p&gt;写一个交换整型变量的值。&lt;br&gt;
 &lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852854.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
