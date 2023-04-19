@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://imcenyi.github.io</id>
     <title>CenYi</title>
-    <link href="http://example.com" />
+    <link href="https://imcenyi.github.io" />
     <updated>2023-04-17T15:39:47.000Z</updated>
     <category term="感悟" />
     <category term="成长" />
@@ -10,9 +10,9 @@
     <category term="语言学习" />
     <category term="笔记" />
     <entry>
-        <id>http://example.com/2023/04/17/SHUFLY%E4%BA%A4%E6%B5%81%E4%BC%9A%E6%9C%89%E6%84%9F/</id>
+        <id>https://imcenyi.github.io/2023/04/17/SHUFLY%E4%BA%A4%E6%B5%81%E4%BC%9A%E6%9C%89%E6%84%9F/</id>
         <title>“SHUFLY交流会有感“</title>
-        <link rel="alternate" href="http://example.com/2023/04/17/SHUFLY%E4%BA%A4%E6%B5%81%E4%BC%9A%E6%9C%89%E6%84%9F/"/>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/04/17/SHUFLY%E4%BA%A4%E6%B5%81%E4%BC%9A%E6%9C%89%E6%84%9F/"/>
         <content type="html">&lt;p&gt;首先真的十分感谢在交流会上分享经验的学长学姐们，真的收获很多。特别是对于我这种信息面不是很广的大一新生来说，像是打开了新世界的大门。接下来我将通过三个方面来简述一下我的收获和反省&lt;/p&gt;
 &lt;h2 id=&#34;1个人选择&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1个人选择&#34;&gt;#&lt;/a&gt; 1. 个人选择&lt;/h2&gt;
 &lt;ul&gt;
@@ -58,16 +58,16 @@
         <updated>2023-04-17T15:39:47.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/04/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E2%80%9C/</id>
+        <id>https://imcenyi.github.io/2023/04/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E2%80%9C/</id>
         <title>构造函数“</title>
-        <link rel="alternate" href="http://example.com/2023/04/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E2%80%9C/"/>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/04/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E2%80%9C/"/>
         <content type="html"></content>
         <updated>2023-04-08T08:19:59.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/04/01/1%20%E5%BC%95%E7%94%A8/</id>
+        <id>https://imcenyi.github.io/2023/04/01/1%20%E5%BC%95%E7%94%A8/</id>
         <title>c++/引用</title>
-        <link rel="alternate" href="http://example.com/2023/04/01/1%20%E5%BC%95%E7%94%A8/"/>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/04/01/1%20%E5%BC%95%E7%94%A8/"/>
         <content type="html">&lt;p&gt;1. 引用&lt;/p&gt;
 &lt;h2 id=&#34;引用的概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的概念&#34;&gt;#&lt;/a&gt; 引用的概念&lt;/h2&gt;
 &lt;p&gt;某个变量的引用，&lt;mark&gt;等价于&lt;/mark&gt;这个变量，相当于这个变量的&lt;mark&gt;别名&lt;/mark&gt;&lt;/p&gt;
