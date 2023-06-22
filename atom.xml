@@ -9,6 +9,7 @@
     <category term="C++" />
     <category term="语言学习" />
     <category term="笔记" />
+    <category term="C#" />
     <entry>
         <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%BB%86%E5%B0%8F%E6%93%8D%E4%BD%9C/win11%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</id>
         <title></title>
@@ -19,55 +20,6 @@
 &lt;h2 id=&#34;直接通过-设置-系统-高级系统设置-进入到control-system&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#直接通过-设置-系统-高级系统设置-进入到control-system&#34;&gt;#&lt;/a&gt; 直接通过 设置 -&amp;gt; 系统 -&amp;gt; 高级系统设置 -&amp;gt; 进入到 control system&lt;/h2&gt;
 </content>
         <updated>2023-06-22T17:44:40.294Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/"/>
-        <content type="html">&lt;p&gt;如果在 Unity 引擎中的对象中挂在的脚本里。&lt;br&gt;
-有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。&lt;br&gt;
-这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
-
-    &amp;#123;
-
-        None=0,
-
-        GetUp,//1
-
-        Wash,//2
-
-        Eat,//3
-
-        Work,//4
-
-    &amp;#125;
-
-    public emAction mAction = emAction.Work;
-    Debug.Log((int)mAction);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们对 &lt;code&gt;mAction&lt;/code&gt;  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png&#34; alt=&#34;Pasted image 20230616154518.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;如果我们在脚本的选项中，选择了 mAction 的&lt;mark&gt;初值&lt;/mark&gt;，那么这个值将覆盖脚本代码中的&lt;mark&gt;初始值&lt;/mark&gt;（注意，只是初始值）。&lt;/p&gt;
-&lt;p&gt;上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 &lt;code&gt;mAction&lt;/code&gt;  所附的 Work。所以打印出来的还是 None 的 0。&lt;/p&gt;
-</content>
-        <updated>2023-06-22T17:44:40.289Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/"/>
-        <content type="html">&lt;p&gt;访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
-</content>
-        <updated>2023-06-22T17:44:40.286Z</updated>
     </entry>
     <entry>
         <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB/</id>
@@ -133,8 +85,142 @@
         <updated>2023-06-22T17:44:40.279Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</id>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E7%BB%A7%E6%89%BF/</id>
         <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E7%BB%A7%E6%89%BF/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.271Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E8%99%9A%E6%96%B9%E6%B3%95/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E8%99%9A%E6%96%B9%E6%B3%95/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.271Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.269Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.261Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%A4%9A%E6%80%81/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%A4%9A%E6%80%81/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.261Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%88%9B%E5%BB%BA%E7%B1%BB/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%88%9B%E5%BB%BA%E7%B1%BB/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.261Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.256Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%201/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%201/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.253Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%203/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%203/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.253Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%202/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%202/"/>
+        <content type="html"></content>
+        <updated>2023-06-22T17:44:40.253Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/Debug.Log/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/Debug.Log/"/>
+        <content type="html">&lt;h1 id=&#34;一定要记得log的l大写&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一定要记得log的l大写&#34;&gt;#&lt;/a&gt; 一定要记得 Log 的 L 大写！！！！&lt;/h1&gt;
+</content>
+        <updated>2023-06-22T17:44:40.245Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png&#34; alt=&#34;Pasted image 20230614104941.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;#&lt;/a&gt; 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。&lt;/h2&gt;
+&lt;h3 id=&#34;1首先是报错的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1首先是报错的原因&#34;&gt;#&lt;/a&gt; 1. 首先是报错的原因&lt;/h3&gt;
+&lt;p&gt;这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。&lt;/p&gt;
+&lt;h2 id=&#34;2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;#&lt;/a&gt; 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错&lt;/h2&gt;
+&lt;p&gt;Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。&lt;br&gt;
+在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。&lt;/p&gt;
+&lt;h2 id=&#34;解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;#&lt;/a&gt; 解决方法，将 scriptcs 所在的目录加入到环境变量当中。&lt;/h2&gt;
+</content>
+        <updated>2023-06-22T17:44:40.245Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD/</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD/"/>
+        <content type="html">&lt;p&gt;&lt;mark&gt;抽象方法只能在抽象类中定义&lt;/mark&gt;&lt;br&gt;
+这个错误提示是因为您在抽象类 &lt;code&gt;Polygon&lt;/code&gt;  中声明了一个抽象方法 &lt;code&gt;Purarea&lt;/code&gt; ，但是没有为它提供方法体。在 C# 中，抽象方法必须以分号结尾，并且不能有方法体，因为它们没有实现，必须在子类中实现。&lt;/p&gt;
+&lt;p&gt;要解决这个问题，您需要为 &lt;code&gt;Purarea&lt;/code&gt;  方法提供方法体，或者将 &lt;code&gt;Polygon&lt;/code&gt;  类声明为抽象类，以便子类可以实现 &lt;code&gt;Purarea&lt;/code&gt;  方法。&lt;/p&gt;
+&lt;p&gt;以下是一个示例，演示了如何在 &lt;code&gt;Polygon&lt;/code&gt;  类中声明抽象方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-CS&#34;&gt;
+abstract class Polygon
+
+&amp;#123;
+
+    public abstract void Purarea();
+
+&amp;#125;
+
+class Rectangle : Polygon
+
+&amp;#123;
+
+    public override void Purarea()
+
+    &amp;#123;
+
+        Console.WriteLine(&amp;quot;Calculate the area of a rectangle.&amp;quot;);
+
+    &amp;#125;
+
+&amp;#125;
+
+// 使用示例
+
+Polygon polygon = new Rectangle();
+
+polygon.Purarea(); // 输出：Calculate the area of a rectangle.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这个示例中，我们定义了一个抽象类 &lt;code&gt;Polygon&lt;/code&gt;  和一个非抽象子类 &lt;code&gt;Rectangle&lt;/code&gt; ，它们都实现了 &lt;code&gt;Purarea&lt;/code&gt;  方法。在使用示例中，我们创建了一个 &lt;code&gt;Rectangle&lt;/code&gt;  对象，并将其赋值给 &lt;code&gt;Polygon&lt;/code&gt;  类型的变量 &lt;code&gt;polygon&lt;/code&gt; 。然后，我们调用 &lt;code&gt;polygon.Purarea()&lt;/code&gt;  方法，它会调用 &lt;code&gt;Rectangle&lt;/code&gt;  类中的 &lt;code&gt;Purarea&lt;/code&gt;  方法，并输出 &lt;code&gt;Calculate the area of a rectangle.&lt;/code&gt; 。&lt;/p&gt;
+</content>
+        <updated>2023-06-22T17:44:40.245Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</id>
+        <title>c#/枚举类的访问等级规则</title>
         <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/"/>
         <content type="html">&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt; enum emAction
 &amp;#123;
@@ -159,11 +245,33 @@ public emAction Action;
 &lt;p&gt;例如，在这个示例中， &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符是 &lt;code&gt;public&lt;/code&gt; ，而 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符是默认的（即 &lt;code&gt;private&lt;/code&gt; ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性低于 &lt;code&gt;mAction&lt;/code&gt;  字段的可访问性。&lt;/p&gt;
 &lt;p&gt;说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。&lt;/p&gt;
 </content>
-        <updated>2023-06-22T17:44:40.271Z</updated>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</id>
+        <title>c#/访问等级</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/"/>
+        <content type="html">&lt;h2 id=&#34;访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;#&lt;/a&gt; 访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
         <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89/</id>
-        <title></title>
+        <title>c#/条件语句（线性）</title>
         <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89/"/>
         <content type="html">&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    void Func1()
 
@@ -201,25 +309,142 @@ public emAction Action;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;#&lt;/a&gt; 条件检测是线性的，只要满足前面的就不会执行后面的&lt;/h1&gt;
 </content>
-        <updated>2023-06-22T17:44:40.271Z</updated>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E7%BB%A7%E6%89%BF/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E7%BB%A7%E6%89%BF/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.271Z</updated>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+        <title>c#/this 和 base 的区别</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+        <content type="html">&lt;h2 id=&#34;this和base都是c中的关键字它们的主要区别在于&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#this和base都是c中的关键字它们的主要区别在于&#34;&gt;#&lt;/a&gt;  &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  都是 C# 中的关键字，它们的主要区别在于：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象，可以用来访问当前对象的成员变量、成员方法和构造函数等。 &lt;code&gt;this&lt;/code&gt;  关键字可以用于区分局部变量和成员变量、调用其他构造函数、实现链式调用等场景。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象，可以用来访问基类的成员变量、成员方法和构造函数等。 &lt;code&gt;base&lt;/code&gt;  关键字可以用于在派生类中调用基类的构造函数、访问基类中被隐藏的成员等场景。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下是一个示例，演示了如何使用 &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  关键字：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
+
+&amp;#123;
+
+    public string Name &amp;#123; get; set; &amp;#125;
+
+    public int Age &amp;#123; get; set; &amp;#125;
+
+    public Person(string name, int age)
+
+    &amp;#123;
+
+        this.Name = name;
+
+        this.Age = age;
+
+    &amp;#125;
+
+&amp;#125;
+
+class Student : Person
+
+&amp;#123;
+
+    public string School &amp;#123; get; set; &amp;#125;
+
+    public Student(string name, int age, string school) : base(name, age)
+
+    &amp;#123;
+
+        this.School = school;
+
+    &amp;#125;
+
+    public void Study()
+
+    &amp;#123;
+
+        Console.WriteLine(&amp;quot;&amp;#123;0&amp;#125; is studying at &amp;#123;1&amp;#125;.&amp;quot;, this.Name, this.School);
+
+    &amp;#125;
+
+    public void ShowInfo()
+
+    &amp;#123;
+
+        Console.WriteLine(&amp;quot;Name: &amp;#123;0&amp;#125;, Age: &amp;#123;1&amp;#125;, School: &amp;#123;2&amp;#125;&amp;quot;, this.Name, this.Age, this.School);
+
+    &amp;#125;
+
+&amp;#125;
+
+// 使用示例
+
+Student student = new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
+
+student.Study(); // 输出：Tom is studying at ABC School.
+
+student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
+&lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E8%99%9A%E6%96%B9%E6%B3%95/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E8%99%9A%E6%96%B9%E6%B3%95/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.271Z</updated>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</id>
+        <title>c#/public变量的赋值</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/"/>
+        <content type="html">&lt;p&gt;如果在 Unity 引擎中的对象中挂在的脚本里。&lt;br&gt;
+有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。&lt;br&gt;
+这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
+
+    &amp;#123;
+
+        None=0,
+
+        GetUp,//1
+
+        Wash,//2
+
+        Eat,//3
+
+        Work,//4
+
+    &amp;#125;
+
+    public emAction mAction = emAction.Work;
+    Debug.Log((int)mAction);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们对 &lt;code&gt;mAction&lt;/code&gt;  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。&lt;br&gt;
+&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png&#34; alt=&#34;Pasted image 20230616154518.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果我们在脚本的选项中，选择了 mAction 的&lt;mark&gt;初值&lt;/mark&gt;，那么这个值将覆盖脚本代码中的&lt;mark&gt;初始值&lt;/mark&gt;（注意，只是初始值）。&lt;/p&gt;
+&lt;p&gt;上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 &lt;code&gt;mAction&lt;/code&gt;  所附的 Work。所以打印出来的还是 None 的 0。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/</id>
+        <title>c#/封装</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/"/>
+        <content type="html">&lt;h2 id=&#34;封装的主要目的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封装的主要目的&#34;&gt;#&lt;/a&gt; 封装的主要目的&lt;/h2&gt;
+&lt;p&gt;封装的主要目的是将数据和行为组合在一个单元中，并对外部隐藏数据的实现细节，只暴露必要的接口供外部访问。这样可以提高代码的可维护性、可重用性和安全性。&lt;/p&gt;
+&lt;p&gt;封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。&lt;/p&gt;
+&lt;p&gt;在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
         <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-        <title></title>
+        <title>c#/抽象方法（abstruct）和虚方法(virtual)的区别</title>
         <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
         <content type="html">&lt;p&gt;&lt;mark&gt;实际上虚函数就类似于初省值&lt;/mark&gt;&lt;/p&gt;
 &lt;h3 id=&#34;抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现&#34;&gt;#&lt;/a&gt; &lt;mark&gt;抽象函数只能定义在抽象类中，并且不能在基类中写入方法体，只能写在子类实现&lt;/mark&gt;&lt;/h3&gt;
@@ -331,220 +556,10 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
 &lt;li&gt;&lt;code&gt;abstract&lt;/code&gt;  方法只能在抽象类中声明，而 &lt;code&gt;virtual&lt;/code&gt;  方法可以在普通的类中声明。&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <updated>2023-06-22T17:44:40.269Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.269Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/"/>
-        <content type="html">&lt;h2 id=&#34;封装的主要目的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封装的主要目的&#34;&gt;#&lt;/a&gt; 封装的主要目的&lt;/h2&gt;
-&lt;p&gt;封装的主要目的是将数据和行为组合在一个单元中，并对外部隐藏数据的实现细节，只暴露必要的接口供外部访问。这样可以提高代码的可维护性、可重用性和安全性。&lt;/p&gt;
-&lt;p&gt;封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。&lt;/p&gt;
-&lt;p&gt;在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。&lt;/p&gt;
-</content>
-        <updated>2023-06-22T17:44:40.261Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.261Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%A4%9A%E6%80%81/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%A4%9A%E6%80%81/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.261Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%88%9B%E5%BB%BA%E7%B1%BB/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%88%9B%E5%BB%BA%E7%B1%BB/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.261Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-        <content type="html">&lt;p&gt;&lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  都是 C# 中的关键字，它们的主要区别在于：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象，可以用来访问当前对象的成员变量、成员方法和构造函数等。 &lt;code&gt;this&lt;/code&gt;  关键字可以用于区分局部变量和成员变量、调用其他构造函数、实现链式调用等场景。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象，可以用来访问基类的成员变量、成员方法和构造函数等。 &lt;code&gt;base&lt;/code&gt;  关键字可以用于在派生类中调用基类的构造函数、访问基类中被隐藏的成员等场景。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;以下是一个示例，演示了如何使用 &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  关键字：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
-
-&amp;#123;
-
-    public string Name &amp;#123; get; set; &amp;#125;
-
-    public int Age &amp;#123; get; set; &amp;#125;
-
-    public Person(string name, int age)
-
-    &amp;#123;
-
-        this.Name = name;
-
-        this.Age = age;
-
-    &amp;#125;
-
-&amp;#125;
-
-class Student : Person
-
-&amp;#123;
-
-    public string School &amp;#123; get; set; &amp;#125;
-
-    public Student(string name, int age, string school) : base(name, age)
-
-    &amp;#123;
-
-        this.School = school;
-
-    &amp;#125;
-
-    public void Study()
-
-    &amp;#123;
-
-        Console.WriteLine(&amp;quot;&amp;#123;0&amp;#125; is studying at &amp;#123;1&amp;#125;.&amp;quot;, this.Name, this.School);
-
-    &amp;#125;
-
-    public void ShowInfo()
-
-    &amp;#123;
-
-        Console.WriteLine(&amp;quot;Name: &amp;#123;0&amp;#125;, Age: &amp;#123;1&amp;#125;, School: &amp;#123;2&amp;#125;&amp;quot;, this.Name, this.Age, this.School);
-
-    &amp;#125;
-
-&amp;#125;
-
-// 使用示例
-
-Student student = new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
-
-student.Study(); // 输出：Tom is studying at ABC School.
-
-student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
-&lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
-</content>
-        <updated>2023-06-22T17:44:40.256Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.256Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%201/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%201/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.253Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%203/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%203/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.253Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%202/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++/%E6%9C%AA%E5%91%BD%E5%90%8D%202/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.253Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/Debug.Log/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/Debug.Log/"/>
-        <content type="html">&lt;h1 id=&#34;一定要记得log的l大写&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一定要记得log的l大写&#34;&gt;#&lt;/a&gt; 一定要记得 Log 的 L 大写！！！！&lt;/h1&gt;
-</content>
-        <updated>2023-06-22T17:44:40.245Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/"/>
-        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png&#34; alt=&#34;Pasted image 20230614104941.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;#&lt;/a&gt; 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。&lt;/h2&gt;
-&lt;h3 id=&#34;1首先是报错的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1首先是报错的原因&#34;&gt;#&lt;/a&gt; 1. 首先是报错的原因&lt;/h3&gt;
-&lt;p&gt;这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。&lt;/p&gt;
-&lt;h2 id=&#34;2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;#&lt;/a&gt; 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错&lt;/h2&gt;
-&lt;p&gt;Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。&lt;br&gt;
-在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。&lt;/p&gt;
-&lt;h2 id=&#34;解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;#&lt;/a&gt; 解决方法，将 scriptcs 所在的目录加入到环境变量当中。&lt;/h2&gt;
-</content>
-        <updated>2023-06-22T17:44:40.245Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD/"/>
-        <content type="html">&lt;p&gt;&lt;mark&gt;抽象方法只能在抽象类中定义&lt;/mark&gt;&lt;br&gt;
-这个错误提示是因为您在抽象类 &lt;code&gt;Polygon&lt;/code&gt;  中声明了一个抽象方法 &lt;code&gt;Purarea&lt;/code&gt; ，但是没有为它提供方法体。在 C# 中，抽象方法必须以分号结尾，并且不能有方法体，因为它们没有实现，必须在子类中实现。&lt;/p&gt;
-&lt;p&gt;要解决这个问题，您需要为 &lt;code&gt;Purarea&lt;/code&gt;  方法提供方法体，或者将 &lt;code&gt;Polygon&lt;/code&gt;  类声明为抽象类，以便子类可以实现 &lt;code&gt;Purarea&lt;/code&gt;  方法。&lt;/p&gt;
-&lt;p&gt;以下是一个示例，演示了如何在 &lt;code&gt;Polygon&lt;/code&gt;  类中声明抽象方法：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-CS&#34;&gt;
-abstract class Polygon
-
-&amp;#123;
-
-    public abstract void Purarea();
-
-&amp;#125;
-
-class Rectangle : Polygon
-
-&amp;#123;
-
-    public override void Purarea()
-
-    &amp;#123;
-
-        Console.WriteLine(&amp;quot;Calculate the area of a rectangle.&amp;quot;);
-
-    &amp;#125;
-
-&amp;#125;
-
-// 使用示例
-
-Polygon polygon = new Rectangle();
-
-polygon.Purarea(); // 输出：Calculate the area of a rectangle.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在这个示例中，我们定义了一个抽象类 &lt;code&gt;Polygon&lt;/code&gt;  和一个非抽象子类 &lt;code&gt;Rectangle&lt;/code&gt; ，它们都实现了 &lt;code&gt;Purarea&lt;/code&gt;  方法。在使用示例中，我们创建了一个 &lt;code&gt;Rectangle&lt;/code&gt;  对象，并将其赋值给 &lt;code&gt;Polygon&lt;/code&gt;  类型的变量 &lt;code&gt;polygon&lt;/code&gt; 。然后，我们调用 &lt;code&gt;polygon.Purarea()&lt;/code&gt;  方法，它会调用 &lt;code&gt;Rectangle&lt;/code&gt;  类中的 &lt;code&gt;Purarea&lt;/code&gt;  方法，并输出 &lt;code&gt;Calculate the area of a rectangle.&lt;/code&gt; 。&lt;/p&gt;
-</content>
-        <updated>2023-06-22T17:44:40.245Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/()/</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/()/"/>
-        <content type="html"></content>
-        <updated>2023-06-22T17:44:40.204Z</updated>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
         <id>https://imcenyi.github.io/2023/04/17/SHUFLY%E4%BA%A4%E6%B5%81%E4%BC%9A%E6%9C%89%E6%84%9F/</id>
