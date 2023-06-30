@@ -4,63 +4,12 @@
     <title>CenYi • Posts by &#34;语言学习&#34; tag</title>
     <link href="https://imcenyi.github.io" />
     <updated>2023-06-22T16:39:59.000Z</updated>
-    <category term="感悟" />
-    <category term="成长" />
     <category term="C++" />
     <category term="语言学习" />
     <category term="笔记" />
+    <category term="感悟" />
+    <category term="成长" />
     <category term="C#" />
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</id>
-        <title>c#/枚举类的访问等级规则</title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/"/>
-        <content type="html">&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt; enum emAction
-&amp;#123;
-    GetUp,
-    Wash,
-    Eat,
-    Work,
-&amp;#125;
-
-public emAction Action;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;上面这串代码出现了一个错误，即 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符与 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符不匹配。具体来说， &lt;code&gt;emAction&lt;/code&gt;  枚举类型是默认的（即没有访问修饰符），而 &lt;code&gt;Action&lt;/code&gt;  字段是公共的（ &lt;code&gt;public&lt;/code&gt; ）。&lt;/p&gt;
-&lt;h3 id=&#34;这违反了c的访问性限制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这违反了c的访问性限制&#34;&gt;#&lt;/a&gt; 这违反了 C# 的访问性限制&lt;/h3&gt;
-&lt;p&gt;因为一个字段的可访问性不能高于其类型的可访问性。因此，您需要将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符更改为公共的（ &lt;code&gt;public&lt;/code&gt; ）或将 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符更改为默认 (private 级别) 的（即删除 &lt;code&gt;public&lt;/code&gt;  关键字）。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;enum emAction
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们可以看到上面那串代码之中，所定义的 emAction 枚举类。前面没有刻意加上访问修饰符，则默认是 &lt;code&gt;private&lt;/code&gt;  访问等级，是最低一级。&lt;br&gt;
-&lt;mark&gt;关于访问等级先后详细看 [[访问等级]]&lt;/mark&gt;&lt;br&gt;
- 如果 &lt;code&gt;Action&lt;/code&gt;  字段是 &lt;code&gt;public&lt;/code&gt; ，则将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性设置为 &lt;code&gt;private&lt;/code&gt;  是不合适的，因为这会违反 C# 的访问性规则。一个字段的可访问性不能高于其类型的可访问性。&lt;/p&gt;
-&lt;h3 id=&#34;那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;#&lt;/a&gt; 那为什么 C# 要有这个访问性限制呢。其实也不难理解&lt;/h3&gt;
-&lt;p&gt;C# 中语段的访问等级不能高于枚举类型的访问等级，是因为一个语段（如字段、属性、方法等）的可访问性依赖于其类型的可访问性。如果一个语段的类型的可访问性比它本身的可访问性更低，那么这个语段就不能被访问，因为它的类型不可访问。&lt;/p&gt;
-&lt;p&gt;例如，在这个示例中， &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符是 &lt;code&gt;public&lt;/code&gt; ，而 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符是默认的（即 &lt;code&gt;private&lt;/code&gt; ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性低于 &lt;code&gt;mAction&lt;/code&gt;  字段的可访问性。&lt;/p&gt;
-&lt;p&gt;说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</id>
-        <title>c#/访问等级</title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/"/>
-        <content type="html">&lt;h2 id=&#34;访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;#&lt;/a&gt; 访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
     <entry>
         <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89/</id>
         <title>c#/条件语句（线性）</title>
@@ -100,6 +49,93 @@ public emAction Action;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;#&lt;/a&gt; 条件检测是线性的，只要满足前面的就不会执行后面的&lt;/h1&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</id>
+        <title>c#/访问等级</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/"/>
+        <content type="html">&lt;h2 id=&#34;访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;#&lt;/a&gt; 访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</id>
+        <title>c#/枚举类的访问等级规则</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/"/>
+        <content type="html">&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt; enum emAction
+&amp;#123;
+    GetUp,
+    Wash,
+    Eat,
+    Work,
+&amp;#125;
+
+public emAction Action;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面这串代码出现了一个错误，即 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符与 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符不匹配。具体来说， &lt;code&gt;emAction&lt;/code&gt;  枚举类型是默认的（即没有访问修饰符），而 &lt;code&gt;Action&lt;/code&gt;  字段是公共的（ &lt;code&gt;public&lt;/code&gt; ）。&lt;/p&gt;
+&lt;h3 id=&#34;这违反了c的访问性限制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这违反了c的访问性限制&#34;&gt;#&lt;/a&gt; 这违反了 C# 的访问性限制&lt;/h3&gt;
+&lt;p&gt;因为一个字段的可访问性不能高于其类型的可访问性。因此，您需要将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符更改为公共的（ &lt;code&gt;public&lt;/code&gt; ）或将 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符更改为默认 (private 级别) 的（即删除 &lt;code&gt;public&lt;/code&gt;  关键字）。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;enum emAction
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以看到上面那串代码之中，所定义的 emAction 枚举类。前面没有刻意加上访问修饰符，则默认是 &lt;code&gt;private&lt;/code&gt;  访问等级，是最低一级。&lt;br&gt;
+&lt;mark&gt;关于访问等级先后详细看 [[访问等级]]&lt;/mark&gt;&lt;br&gt;
+ 如果 &lt;code&gt;Action&lt;/code&gt;  字段是 &lt;code&gt;public&lt;/code&gt; ，则将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性设置为 &lt;code&gt;private&lt;/code&gt;  是不合适的，因为这会违反 C# 的访问性规则。一个字段的可访问性不能高于其类型的可访问性。&lt;/p&gt;
+&lt;h3 id=&#34;那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;#&lt;/a&gt; 那为什么 C# 要有这个访问性限制呢。其实也不难理解&lt;/h3&gt;
+&lt;p&gt;C# 中语段的访问等级不能高于枚举类型的访问等级，是因为一个语段（如字段、属性、方法等）的可访问性依赖于其类型的可访问性。如果一个语段的类型的可访问性比它本身的可访问性更低，那么这个语段就不能被访问，因为它的类型不可访问。&lt;/p&gt;
+&lt;p&gt;例如，在这个示例中， &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符是 &lt;code&gt;public&lt;/code&gt; ，而 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符是默认的（即 &lt;code&gt;private&lt;/code&gt; ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性低于 &lt;code&gt;mAction&lt;/code&gt;  字段的可访问性。&lt;/p&gt;
+&lt;p&gt;说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</id>
+        <title>c#/public变量的赋值</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/"/>
+        <content type="html">&lt;p&gt;如果在 Unity 引擎中的对象中挂在的脚本里。&lt;br&gt;
+有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。&lt;br&gt;
+这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
+
+    &amp;#123;
+
+        None=0,
+
+        GetUp,//1
+
+        Wash,//2
+
+        Eat,//3
+
+        Work,//4
+
+    &amp;#125;
+
+    public emAction mAction = emAction.Work;
+    Debug.Log((int)mAction);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们对 &lt;code&gt;mAction&lt;/code&gt;  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png&#34; alt=&#34;Pasted image 20230616154518.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果我们在脚本的选项中，选择了 mAction 的&lt;mark&gt;初值&lt;/mark&gt;，那么这个值将覆盖脚本代码中的&lt;mark&gt;初始值&lt;/mark&gt;（注意，只是初始值）。&lt;/p&gt;
+&lt;p&gt;上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 &lt;code&gt;mAction&lt;/code&gt;  所附的 Work。所以打印出来的还是 None 的 0。&lt;/p&gt;
 </content>
         <category term="语言学习" />
         <category term="笔记" />
@@ -178,42 +214,6 @@ student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
 &lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</id>
-        <title>c#/public变量的赋值</title>
-        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/"/>
-        <content type="html">&lt;p&gt;如果在 Unity 引擎中的对象中挂在的脚本里。&lt;br&gt;
-有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。&lt;br&gt;
-这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
-
-    &amp;#123;
-
-        None=0,
-
-        GetUp,//1
-
-        Wash,//2
-
-        Eat,//3
-
-        Work,//4
-
-    &amp;#125;
-
-    public emAction mAction = emAction.Work;
-    Debug.Log((int)mAction);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们对 &lt;code&gt;mAction&lt;/code&gt;  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png&#34; alt=&#34;Pasted image 20230616154518.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;如果我们在脚本的选项中，选择了 mAction 的&lt;mark&gt;初值&lt;/mark&gt;，那么这个值将覆盖脚本代码中的&lt;mark&gt;初始值&lt;/mark&gt;（注意，只是初始值）。&lt;/p&gt;
-&lt;p&gt;上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 &lt;code&gt;mAction&lt;/code&gt;  所附的 Work。所以打印出来的还是 None 的 0。&lt;/p&gt;
 </content>
         <category term="语言学习" />
         <category term="笔记" />
@@ -354,6 +354,64 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
         <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB/</id>
+        <title>c#/抽象类</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB/"/>
+        <content type="html">&lt;p&gt;/*  抽象类&lt;/p&gt;
+&lt;p&gt;1. 抽象类不可以被实例化&lt;/p&gt;
+&lt;p&gt;2. 抽象函数只能写在抽象类之中，并且抽象函数不能有方法体&lt;/p&gt;
+&lt;p&gt;3. 抽象类的子类必须实现抽象类中的所有抽象函数&lt;/p&gt;
+&lt;p&gt;4. 抽象类中可以有非抽象函数&lt;/p&gt;
+&lt;p&gt;5. 抽象类可以继承抽象类，但是子类必须实现所有抽象函数&lt;/p&gt;
+&lt;p&gt;6. 非抽象类可以继承抽象类，但是子类必须实现所有抽象函数&lt;/p&gt;
+&lt;p&gt;*/&lt;/p&gt;
+&lt;h2 id=&#34;密封类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#密封类&#34;&gt;#&lt;/a&gt; 密封类&lt;/h2&gt;
+&lt;p&gt;1. 密封类不可以被继承（他只能是子类）&lt;/p&gt;
+&lt;p&gt;2. 密封类不能是抽象的。sealed 和 abstract 是互斥的&lt;/p&gt;
+&lt;p&gt;（其实很好理解，密封类不能作为基类，只能是子类&lt;/p&gt;
+&lt;p&gt;而抽象类虽然可以既是基类又是子类，但是其中的抽&lt;/p&gt;
+&lt;p&gt;象函数是不能在抽象类中写方法体的，必须要在子类&lt;/p&gt;
+&lt;p&gt;中实现，这就和密封类的定义【不可被继承，不能有子类】相违背了）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142194.png&#34; alt=&#34;Pasted image 20230621161128.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;上述报错表明了抽象类和封闭类是互斥的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#上述报错表明了抽象类和封闭类是互斥的&#34;&gt;#&lt;/a&gt; 上述报错，表明了抽象类和封闭类是互斥的&lt;/h3&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB/</id>
+        <title>c#/抽象函数</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154048.png&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141676.png&#34; alt=&#34;Pasted image 20230621154506.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抽象类不可被实例化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类不可被实例化&#34;&gt;#&lt;/a&gt; 抽象类不可被实例化&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154709.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;#&lt;/a&gt; 抽象类之中的抽象函数必须在&lt;mark&gt;子类写好实现的方法体&lt;/mark&gt;&lt;/h2&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB/</id>
+        <title>c#/静态类</title>
+        <link rel="alternate" href="https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB/"/>
+        <content type="html">&lt;p&gt;静态变量不可以通过实例来访问，只能通过类名，因为他是共有的。&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139796.png&#34; alt=&#34;Pasted image 20230620180951.png&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230140156.png&#34; alt=&#34;Pasted image 20230620181011.png&#34;&gt;&lt;br&gt;
+ 上面是错误示范&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141887.png&#34; alt=&#34;Pasted image 20230620181325.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;应该使用 MyClass3 这个类名而不是 myClass3 这个实例&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
         <id>https://imcenyi.github.io/2023/04/01/1%20%E5%BC%95%E7%94%A8/</id>
         <title>c++/引用</title>
         <link rel="alternate" href="https://imcenyi.github.io/2023/04/01/1%20%E5%BC%95%E7%94%A8/"/>
@@ -365,25 +423,25 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
 反过来，对于 r 的运算，同样也会作用到 n 上。&lt;/p&gt;
 &lt;p&gt;如&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; n&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;r&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;n&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;r&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;// 这一步运算也作用到了 n 上&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cout&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;r&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cout&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;n&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;n&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;// 这一步运算也作用到了 r 上&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cout&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;r&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;最后 r=n=5，可见引用运算同步。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852656.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852656.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意，引用是从一而终的，不可以引用其他变量&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;引用只能引用&lt;mark&gt;变量&lt;/mark&gt;，不能引用&lt;s&gt;常量和表达式&lt;/s&gt;&lt;/strong&gt;&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852848.png&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852848.png&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
 &lt;strong&gt; 这里 r1=b 这一句，并不是让 r1 引用 b，而是给 r1 赋了 b 的值&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;引用的作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用的作用&#34;&gt;#&lt;/a&gt; 引用的作用&lt;/h2&gt;
 &lt;p&gt;写一个交换整型变量的值。&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852854.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852854.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;实际上 n1，n2，并不会改变。&lt;/p&gt;
 &lt;p&gt;但是引用可以很好解决这个问题。&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852954.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081852954.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;在这里由与附给形参的类型是引用，所以 a，b 与 n1，n2 等价。&lt;br&gt;
 在子函数里 ab 所做的运算，n1n2 同样也会执行，所以 n1n2 会改变。&lt;/p&gt;
 &lt;p&gt;返回值是个引用，则可以对于返回值进行赋值。&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081853831.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081853831.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;常引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常引用&#34;&gt;#&lt;/a&gt; 常引用&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081853189.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081853189.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意，不可以通过常引用来改变引用的内容（可以用其他方式）。&lt;/strong&gt;!&lt;br&gt;
-&lt;img data-src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081854020.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202304081854020.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
 </content>
         <category term="C++" />
         <category term="语言学习" />
