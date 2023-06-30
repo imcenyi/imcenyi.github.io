@@ -14,24 +14,24 @@
         <category>成长</category>
         <category>C#</category>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html</guid>
             <title>c#/条件语句（线性）</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
             <pubDate>Fri, 23 Jun 2023 00:39:59 +0800</pubDate>
-            <description><![CDATA[ &lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    void Func1()
+            <description><![CDATA[ &lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;    void Func1()
 
     &amp;#123;
 
-        int value1=15;
+        int value1&amp;#x3D;15;
 
         if(value1&amp;gt;5)
 
         &amp;#123;
 
-            Debug.Log(&amp;quot;value1 is greater than 5&amp;quot;);//value1满足了第一个条件就执行了，输出语句
+            Debug.Log(&amp;quot;value1 is greater than 5&amp;quot;);&amp;#x2F;&amp;#x2F;value1满足了第一个条件就执行了，输出语句
 
         &amp;#125;
 
@@ -39,7 +39,7 @@
 
         &amp;#123;
 
-            Debug.Log(&amp;quot;value1 is greater than 10&amp;quot;);//由于第一个已经执行了，就终端这一串条件语句，所以虽然满足条件但没有执行
+            Debug.Log(&amp;quot;value1 is greater than 10&amp;quot;);&amp;#x2F;&amp;#x2F;由于第一个已经执行了，就终端这一串条件语句，所以虽然满足条件但没有执行
 
         &amp;#125;
 
@@ -53,15 +53,44 @@
 
     &amp;#125;
 
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
+&amp;#125;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#条件检测是线性的只要满足前面的就不会执行后面的&#34;&gt;#&lt;/a&gt; 条件检测是线性的，只要满足前面的就不会执行后面的&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum.html</guid>
+            <title>c#/枚举类的访问等级规则</title>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum.html</link>
+            <category>语言学习</category>
+            <category>笔记</category>
+            <category>C#</category>
+            <pubDate>Fri, 23 Jun 2023 00:39:59 +0800</pubDate>
+            <description><![CDATA[ &lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt; enum emAction
+&amp;#123;
+    GetUp,
+    Wash,
+    Eat,
+    Work,
+&amp;#125;
+
+public emAction Action;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面这串代码出现了一个错误，即 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符与 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符不匹配。具体来说， &lt;code&gt;emAction&lt;/code&gt;  枚举类型是默认的（即没有访问修饰符），而 &lt;code&gt;Action&lt;/code&gt;  字段是公共的（ &lt;code&gt;public&lt;/code&gt; ）。&lt;/p&gt;
+&lt;h3 id=&#34;这违反了c的访问性限制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这违反了c的访问性限制&#34;&gt;#&lt;/a&gt; 这违反了 C# 的访问性限制&lt;/h3&gt;
+&lt;p&gt;因为一个字段的可访问性不能高于其类型的可访问性。因此，您需要将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符更改为公共的（ &lt;code&gt;public&lt;/code&gt; ）或将 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符更改为默认 (private 级别) 的（即删除 &lt;code&gt;public&lt;/code&gt;  关键字）。&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;enum emAction&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以看到上面那串代码之中，所定义的 emAction 枚举类。前面没有刻意加上访问修饰符，则默认是 &lt;code&gt;private&lt;/code&gt;  访问等级，是最低一级。&lt;br&gt;
+&lt;mark&gt;关于访问等级先后详细看 [[访问等级]]&lt;/mark&gt;&lt;br&gt;
+ 如果 &lt;code&gt;Action&lt;/code&gt;  字段是 &lt;code&gt;public&lt;/code&gt; ，则将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性设置为 &lt;code&gt;private&lt;/code&gt;  是不合适的，因为这会违反 C# 的访问性规则。一个字段的可访问性不能高于其类型的可访问性。&lt;/p&gt;
+&lt;h3 id=&#34;那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;#&lt;/a&gt; 那为什么 C# 要有这个访问性限制呢。其实也不难理解&lt;/h3&gt;
+&lt;p&gt;C# 中语段的访问等级不能高于枚举类型的访问等级，是因为一个语段（如字段、属性、方法等）的可访问性依赖于其类型的可访问性。如果一个语段的类型的可访问性比它本身的可访问性更低，那么这个语段就不能被访问，因为它的类型不可访问。&lt;/p&gt;
+&lt;p&gt;例如，在这个示例中， &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符是 &lt;code&gt;public&lt;/code&gt; ，而 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符是默认的（即 &lt;code&gt;private&lt;/code&gt; ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性低于 &lt;code&gt;mAction&lt;/code&gt;  字段的可访问性。&lt;/p&gt;
+&lt;p&gt;说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html</guid>
             <title>c#/访问等级</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -78,41 +107,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</guid>
-            <title>c#/枚举类的访问等级规则</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum/</link>
-            <category>语言学习</category>
-            <category>笔记</category>
-            <category>C#</category>
-            <pubDate>Fri, 23 Jun 2023 00:39:59 +0800</pubDate>
-            <description><![CDATA[ &lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt; enum emAction
-&amp;#123;
-    GetUp,
-    Wash,
-    Eat,
-    Work,
-&amp;#125;
-
-public emAction Action;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;上面这串代码出现了一个错误，即 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符与 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符不匹配。具体来说， &lt;code&gt;emAction&lt;/code&gt;  枚举类型是默认的（即没有访问修饰符），而 &lt;code&gt;Action&lt;/code&gt;  字段是公共的（ &lt;code&gt;public&lt;/code&gt; ）。&lt;/p&gt;
-&lt;h3 id=&#34;这违反了c的访问性限制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这违反了c的访问性限制&#34;&gt;#&lt;/a&gt; 这违反了 C# 的访问性限制&lt;/h3&gt;
-&lt;p&gt;因为一个字段的可访问性不能高于其类型的可访问性。因此，您需要将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符更改为公共的（ &lt;code&gt;public&lt;/code&gt; ）或将 &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符更改为默认 (private 级别) 的（即删除 &lt;code&gt;public&lt;/code&gt;  关键字）。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;enum emAction
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们可以看到上面那串代码之中，所定义的 emAction 枚举类。前面没有刻意加上访问修饰符，则默认是 &lt;code&gt;private&lt;/code&gt;  访问等级，是最低一级。&lt;br&gt;
-&lt;mark&gt;关于访问等级先后详细看 [[访问等级]]&lt;/mark&gt;&lt;br&gt;
- 如果 &lt;code&gt;Action&lt;/code&gt;  字段是 &lt;code&gt;public&lt;/code&gt; ，则将 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性设置为 &lt;code&gt;private&lt;/code&gt;  是不合适的，因为这会违反 C# 的访问性规则。一个字段的可访问性不能高于其类型的可访问性。&lt;/p&gt;
-&lt;h3 id=&#34;那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#那为什么c要有这个访问性限制呢-其实也不难理解&#34;&gt;#&lt;/a&gt; 那为什么 C# 要有这个访问性限制呢。其实也不难理解&lt;/h3&gt;
-&lt;p&gt;C# 中语段的访问等级不能高于枚举类型的访问等级，是因为一个语段（如字段、属性、方法等）的可访问性依赖于其类型的可访问性。如果一个语段的类型的可访问性比它本身的可访问性更低，那么这个语段就不能被访问，因为它的类型不可访问。&lt;/p&gt;
-&lt;p&gt;例如，在这个示例中， &lt;code&gt;mAction&lt;/code&gt;  字段的访问修饰符是 &lt;code&gt;public&lt;/code&gt; ，而 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的访问修饰符是默认的（即 &lt;code&gt;private&lt;/code&gt; ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 &lt;code&gt;emAction&lt;/code&gt;  枚举类型的可访问性低于 &lt;code&gt;mAction&lt;/code&gt;  字段的可访问性。&lt;/p&gt;
-&lt;p&gt;说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html</guid>
             <title>c#/public变量的赋值</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -120,25 +117,24 @@ public emAction Action;
             <description><![CDATA[ &lt;p&gt;如果在 Unity 引擎中的对象中挂在的脚本里。&lt;br&gt;
 有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。&lt;br&gt;
 这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
+&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;    public enum emAction
 
     &amp;#123;
 
-        None=0,
+        None&amp;#x3D;0,
 
-        GetUp,//1
+        GetUp,&amp;#x2F;&amp;#x2F;1
 
-        Wash,//2
+        Wash,&amp;#x2F;&amp;#x2F;2
 
-        Eat,//3
+        Eat,&amp;#x2F;&amp;#x2F;3
 
-        Work,//4
+        Work,&amp;#x2F;&amp;#x2F;4
 
     &amp;#125;
 
-    public emAction mAction = emAction.Work;
-    Debug.Log((int)mAction);
-&lt;/code&gt;&lt;/pre&gt;
+    public emAction mAction &amp;#x3D; emAction.Work;
+    Debug.Log((int)mAction);&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;我们对 &lt;code&gt;mAction&lt;/code&gt;  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。&lt;br&gt;
 &lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png&#34; alt=&#34;Pasted image 20230616154518.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果我们在脚本的选项中，选择了 mAction 的&lt;mark&gt;初值&lt;/mark&gt;，那么这个值将覆盖脚本代码中的&lt;mark&gt;初始值&lt;/mark&gt;（注意，只是初始值）。&lt;/p&gt;
@@ -146,9 +142,9 @@ public emAction Action;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</guid>
             <title>c#/this 和 base 的区别</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -159,7 +155,7 @@ public emAction Action;
 &lt;li&gt;&lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象，可以用来访问基类的成员变量、成员方法和构造函数等。 &lt;code&gt;base&lt;/code&gt;  关键字可以用于在派生类中调用基类的构造函数、访问基类中被隐藏的成员等场景。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;以下是一个示例，演示了如何使用 &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  关键字：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
+&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
 
 &amp;#123;
 
@@ -171,9 +167,9 @@ public emAction Action;
 
     &amp;#123;
 
-        this.Name = name;
+        this.Name &amp;#x3D; name;
 
-        this.Age = age;
+        this.Age &amp;#x3D; age;
 
     &amp;#125;
 
@@ -189,7 +185,7 @@ class Student : Person
 
     &amp;#123;
 
-        this.School = school;
+        this.School &amp;#x3D; school;
 
     &amp;#125;
 
@@ -211,22 +207,21 @@ class Student : Person
 
 &amp;#125;
 
-// 使用示例
+&amp;#x2F;&amp;#x2F; 使用示例
 
-Student student = new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
+Student student &amp;#x3D; new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
 
-student.Study(); // 输出：Tom is studying at ABC School.
+student.Study(); &amp;#x2F;&amp;#x2F; 输出：Tom is studying at ABC School.
 
-student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
-&lt;/code&gt;&lt;/pre&gt;
+student.ShowInfo(); &amp;#x2F;&amp;#x2F; 输出：Name: Tom, Age: 18, School: ABC School&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
 &lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html</guid>
             <title>c#/封装</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -238,9 +233,9 @@ student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html</guid>
             <title>c#/抽象方法（abstruct）和虚方法(virtual)的区别</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -254,11 +249,11 @@ student.ShowInfo(); // 输出：Name: Tom, Age: 18, School: ABC School
 &lt;li&gt;抽象方法只能在抽象类中声明，而虚函数可以在普通的类中声明。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;下面是一个示例，演示了如何在抽象类中声明抽象方法和在普通类中声明虚函数：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;abstract class Shape
+&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;abstract class Shape
 
 &amp;#123;
 
-    public abstract double GetArea();//这里的方法体必须是空
+    public abstract double GetArea();&amp;#x2F;&amp;#x2F;这里的方法体必须是空
 
 &amp;#125;
 
@@ -270,7 +265,7 @@ class Rectangle : Shape
 
     public double Height &amp;#123; get; set; &amp;#125;
 
-    public override double GetArea()//子类写入方法体实现
+    public override double GetArea()&amp;#x2F;&amp;#x2F;子类写入方法体实现
 
     &amp;#123;
 
@@ -329,24 +324,23 @@ class Triangle : Shape
 
 &amp;#125;
 
-// 使用示例
+&amp;#x2F;&amp;#x2F; 使用示例
 
-Shape shape1 = new Rectangle &amp;#123; Width = 10, Height = 20 &amp;#125;;
+Shape shape1 &amp;#x3D; new Rectangle &amp;#123; Width &amp;#x3D; 10, Height &amp;#x3D; 20 &amp;#125;;
 
-Shape shape2 = new Circle &amp;#123; Radius = 5 &amp;#125;;
+Shape shape2 &amp;#x3D; new Circle &amp;#123; Radius &amp;#x3D; 5 &amp;#125;;
 
-Shape shape3 = new Square &amp;#123; Side = 10 &amp;#125;;
+Shape shape3 &amp;#x3D; new Square &amp;#123; Side &amp;#x3D; 10 &amp;#125;;
 
-Shape shape4 = new Triangle &amp;#123; Base = 10, Height = 5 &amp;#125;;
+Shape shape4 &amp;#x3D; new Triangle &amp;#123; Base &amp;#x3D; 10, Height &amp;#x3D; 5 &amp;#125;;
 
-Console.WriteLine(shape1.GetArea()); // 输出：200
+Console.WriteLine(shape1.GetArea()); &amp;#x2F;&amp;#x2F; 输出：200
 
-Console.WriteLine(shape2.GetArea()); // 输出：78.53981633974483
+Console.WriteLine(shape2.GetArea()); &amp;#x2F;&amp;#x2F; 输出：78.53981633974483
 
-Console.WriteLine(shape3.GetArea()); // 输出：100
+Console.WriteLine(shape3.GetArea()); &amp;#x2F;&amp;#x2F; 输出：100
 
-Console.WriteLine(shape4.GetArea()); // 输出：25
-&lt;/code&gt;&lt;/pre&gt;
+Console.WriteLine(shape4.GetArea()); &amp;#x2F;&amp;#x2F; 输出：25&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在这个示例中，我们定义了一个抽象类 &lt;code&gt;Shape&lt;/code&gt;  和四个子类 &lt;code&gt;Rectangle&lt;/code&gt; 、 &lt;code&gt;Circle&lt;/code&gt; 、 &lt;code&gt;Square&lt;/code&gt;  和 &lt;code&gt;Triangle&lt;/code&gt; ，它们都重写了 &lt;code&gt;GetArea&lt;/code&gt;  方法。 &lt;code&gt;GetArea&lt;/code&gt;  方法是一个抽象方法，必须在子类中实现。在使用示例中，我们创建了四个不同的形状对象，并分别调用它们的 &lt;code&gt;GetArea&lt;/code&gt;  方法，输出了它们的面积。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;abstract&lt;/code&gt;  和 &lt;code&gt;virtual&lt;/code&gt;  都是 C# 中用于实现多态的关键字，它们的主要区别在于：&lt;/p&gt;
 &lt;ol&gt;
@@ -357,9 +351,9 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB.html</guid>
             <title>c#/抽象类</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E5%AF%86%E5%B0%81%E7%B1%BB.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -384,9 +378,9 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html</guid>
             <title>c#/抽象函数</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
@@ -399,9 +393,9 @@ Console.WriteLine(shape4.GetArea()); // 输出：25
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB/</guid>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html</guid>
             <title>c#/静态类</title>
-            <link>https://imcenyi.github.io/2023/06/23/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB/</link>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html</link>
             <category>语言学习</category>
             <category>笔记</category>
             <category>C#</category>
