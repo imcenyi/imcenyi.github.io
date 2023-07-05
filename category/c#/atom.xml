@@ -55,25 +55,6 @@
         <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html</id>
-        <title>c#/访问等级</title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html"/>
-        <content type="html">&lt;h2 id=&#34;访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;#&lt;/a&gt; 访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
         <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum.html</id>
         <title>c#/枚举类的访问等级规则</title>
         <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7%E8%A7%84%E5%88%99%20enum.html"/>
@@ -139,121 +120,18 @@ public emAction Action;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbe
         <updated>2023-06-22T16:39:59.000Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</id>
-        <title>c#/this 和 base 的区别</title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html"/>
-        <content type="html">&lt;h2 id=&#34;this和base都是c中的关键字它们的主要区别在于&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#this和base都是c中的关键字它们的主要区别在于&#34;&gt;#&lt;/a&gt;  &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  都是 C# 中的关键字，它们的主要区别在于：&lt;/h2&gt;
+        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html</id>
+        <title>c#/访问等级</title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html"/>
+        <content type="html">&lt;h2 id=&#34;访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问等级access-level是指在c中用于控制类-结构体-接口-字段-属性-方法和构造函数等成员的可访问性的修饰符-c中有五个访问等级从高到低分别是&#34;&gt;#&lt;/a&gt; 访问等级（Access Level）是指在 C# 中用于控制类、结构体、接口、字段、属性、方法和构造函数等成员的可访问性的修饰符。C# 中有五个访问等级，从高到低分别是：&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象，可以用来访问当前对象的成员变量、成员方法和构造函数等。 &lt;code&gt;this&lt;/code&gt;  关键字可以用于区分局部变量和成员变量、调用其他构造函数、实现链式调用等场景。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象，可以用来访问基类的成员变量、成员方法和构造函数等。 &lt;code&gt;base&lt;/code&gt;  关键字可以用于在派生类中调用基类的构造函数、访问基类中被隐藏的成员等场景。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公共的，可以被任何代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected internal&lt;/code&gt; ：受保护的内部的，可以被同一程序集中的代码和派生类中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;internal&lt;/code&gt; ：内部的，可以被同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：受保护的，可以被派生类中的代码和同一程序集中的代码访问。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有的，只能被同一类中的代码访问。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;以下是一个示例，演示了如何使用 &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  关键字：&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
-
-&amp;#123;
-
-    public string Name &amp;#123; get; set; &amp;#125;
-
-    public int Age &amp;#123; get; set; &amp;#125;
-
-    public Person(string name, int age)
-
-    &amp;#123;
-
-        this.Name &amp;#x3D; name;
-
-        this.Age &amp;#x3D; age;
-
-    &amp;#125;
-
-&amp;#125;
-
-class Student : Person
-
-&amp;#123;
-
-    public string School &amp;#123; get; set; &amp;#125;
-
-    public Student(string name, int age, string school) : base(name, age)
-
-    &amp;#123;
-
-        this.School &amp;#x3D; school;
-
-    &amp;#125;
-
-    public void Study()
-
-    &amp;#123;
-
-        Console.WriteLine(&amp;quot;&amp;#123;0&amp;#125; is studying at &amp;#123;1&amp;#125;.&amp;quot;, this.Name, this.School);
-
-    &amp;#125;
-
-    public void ShowInfo()
-
-    &amp;#123;
-
-        Console.WriteLine(&amp;quot;Name: &amp;#123;0&amp;#125;, Age: &amp;#123;1&amp;#125;, School: &amp;#123;2&amp;#125;&amp;quot;, this.Name, this.Age, this.School);
-
-    &amp;#125;
-
-&amp;#125;
-
-&amp;#x2F;&amp;#x2F; 使用示例
-
-Student student &amp;#x3D; new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
-
-student.Study(); &amp;#x2F;&amp;#x2F; 输出：Tom is studying at ABC School.
-
-student.ShowInfo(); &amp;#x2F;&amp;#x2F; 输出：Name: Tom, Age: 18, School: ABC School&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
-&lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html</id>
-        <title>c#/封装</title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html"/>
-        <content type="html">&lt;h2 id=&#34;封装的主要目的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封装的主要目的&#34;&gt;#&lt;/a&gt; 封装的主要目的&lt;/h2&gt;
-&lt;p&gt;封装的主要目的是将数据和行为组合在一个单元中，并对外部隐藏数据的实现细节，只暴露必要的接口供外部访问。这样可以提高代码的可维护性、可重用性和安全性。&lt;/p&gt;
-&lt;p&gt;封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。&lt;/p&gt;
-&lt;p&gt;在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。&lt;/p&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html</id>
-        <title>c#/抽象函数</title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html"/>
-        <content type="html">&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154048.png&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141676.png&#34; alt=&#34;Pasted image 20230621154506.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;抽象类不可被实例化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类不可被实例化&#34;&gt;#&lt;/a&gt; 抽象类不可被实例化&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154709.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;#&lt;/a&gt; 抽象类之中的抽象函数必须在&lt;mark&gt;子类写好实现的方法体&lt;/mark&gt;&lt;/h2&gt;
-</content>
-        <category term="语言学习" />
-        <category term="笔记" />
-        <category term="C#" />
-        <updated>2023-06-22T16:39:59.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html</id>
-        <title>c#/静态类</title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html"/>
-        <content type="html">&lt;p&gt;静态变量不可以通过实例来访问，只能通过类名，因为他是共有的。&lt;br&gt;
-&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139796.png&#34; alt=&#34;Pasted image 20230620180951.png&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230140156.png&#34; alt=&#34;Pasted image 20230620181011.png&#34;&gt;&lt;br&gt;
- 上面是错误示范&lt;br&gt;
-&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141887.png&#34; alt=&#34;Pasted image 20230620181325.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;应该使用 MyClass3 这个类名而不是 myClass3 这个实例&lt;/p&gt;
+&lt;p&gt;访问等级可以帮助您控制代码的可访问性，从而提高代码的安全性和可维护性。例如，将某些成员设置为 &lt;code&gt;private&lt;/code&gt;  可以防止其他代码意外地修改它们，从而提高代码的安全性。将某些成员设置为 &lt;code&gt;public&lt;/code&gt;  可以使其他代码更容易地使用它们，从而提高代码的可维护性。&lt;/p&gt;
 </content>
         <category term="语言学习" />
         <category term="笔记" />
@@ -372,6 +250,128 @@ Console.WriteLine(shape4.GetArea()); &amp;#x2F;&amp;#x2F; 输出：25&lt;span 
 &lt;li&gt;&lt;code&gt;abstract&lt;/code&gt;  方法没有实现，只有方法签名，而 &lt;code&gt;virtual&lt;/code&gt;  方法有默认的实现，可以在基类中提供。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;abstract&lt;/code&gt;  方法只能在抽象类中声明，而 &lt;code&gt;virtual&lt;/code&gt;  方法可以在普通的类中声明。&lt;/li&gt;
 &lt;/ol&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html</id>
+        <title>c#/this 和 base 的区别</title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/this%20%E5%92%8C%20base%20%E7%9A%84%E5%8C%BA%E5%88%AB.html"/>
+        <content type="html">&lt;h2 id=&#34;this和base都是c中的关键字它们的主要区别在于&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#this和base都是c中的关键字它们的主要区别在于&#34;&gt;#&lt;/a&gt;  &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  都是 C# 中的关键字，它们的主要区别在于：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象，可以用来访问当前对象的成员变量、成员方法和构造函数等。 &lt;code&gt;this&lt;/code&gt;  关键字可以用于区分局部变量和成员变量、调用其他构造函数、实现链式调用等场景。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象，可以用来访问基类的成员变量、成员方法和构造函数等。 &lt;code&gt;base&lt;/code&gt;  关键字可以用于在派生类中调用基类的构造函数、访问基类中被隐藏的成员等场景。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下是一个示例，演示了如何使用 &lt;code&gt;this&lt;/code&gt;  和 &lt;code&gt;base&lt;/code&gt;  关键字：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-C#&#34; data-language=&#34;C#&#34;&gt;&lt;code class=&#34;language-C#&#34;&gt;class Person
+
+&amp;#123;
+
+    public string Name &amp;#123; get; set; &amp;#125;
+
+    public int Age &amp;#123; get; set; &amp;#125;
+
+    public Person(string name, int age)
+
+    &amp;#123;
+
+        this.Name &amp;#x3D; name;
+
+        this.Age &amp;#x3D; age;
+
+    &amp;#125;
+
+&amp;#125;
+
+class Student : Person
+
+&amp;#123;
+
+    public string School &amp;#123; get; set; &amp;#125;
+
+    public Student(string name, int age, string school) : base(name, age)
+
+    &amp;#123;
+
+        this.School &amp;#x3D; school;
+
+    &amp;#125;
+
+    public void Study()
+
+    &amp;#123;
+
+        Console.WriteLine(&amp;quot;&amp;#123;0&amp;#125; is studying at &amp;#123;1&amp;#125;.&amp;quot;, this.Name, this.School);
+
+    &amp;#125;
+
+    public void ShowInfo()
+
+    &amp;#123;
+
+        Console.WriteLine(&amp;quot;Name: &amp;#123;0&amp;#125;, Age: &amp;#123;1&amp;#125;, School: &amp;#123;2&amp;#125;&amp;quot;, this.Name, this.Age, this.School);
+
+    &amp;#125;
+
+&amp;#125;
+
+&amp;#x2F;&amp;#x2F; 使用示例
+
+Student student &amp;#x3D; new Student(&amp;quot;Tom&amp;quot;, 18, &amp;quot;ABC School&amp;quot;);
+
+student.Study(); &amp;#x2F;&amp;#x2F; 输出：Tom is studying at ABC School.
+
+student.ShowInfo(); &amp;#x2F;&amp;#x2F; 输出：Name: Tom, Age: 18, School: ABC School&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在这个示例中，我们定义了一个 &lt;code&gt;Person&lt;/code&gt;  类和一个 &lt;code&gt;Student&lt;/code&gt;  类， &lt;code&gt;Student&lt;/code&gt;  类继承自 &lt;code&gt;Person&lt;/code&gt;  类。在 &lt;code&gt;Person&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;this&lt;/code&gt;  关键字来引用当前对象的成员变量。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们定义了一个构造函数，使用 &lt;code&gt;base&lt;/code&gt;  关键字来调用基类的构造函数。在 &lt;code&gt;Student&lt;/code&gt;  类中，我们还定义了两个方法 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt; ，分别使用 &lt;code&gt;this&lt;/code&gt;  关键字和 &lt;code&gt;base&lt;/code&gt;  关键字来访问当前对象和基类对象的成员变量。在使用示例中，我们创建了一个 &lt;code&gt;Student&lt;/code&gt;  对象，并调用了它的 &lt;code&gt;Study&lt;/code&gt;  和 &lt;code&gt;ShowInfo&lt;/code&gt;  方法，输出了相应的信息。&lt;/p&gt;
+&lt;p&gt;总的来说， &lt;code&gt;this&lt;/code&gt;  关键字用于引用当前对象， &lt;code&gt;base&lt;/code&gt;  关键字用于引用基类对象。它们的应用场景不同， &lt;code&gt;this&lt;/code&gt;  关键字通常用于访问当前对象的成员， &lt;code&gt;base&lt;/code&gt;  关键字通常用于在派生类中调用基类的构造函数或访问基类中被隐藏的成员。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html</id>
+        <title>c#/抽象函数</title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154048.png&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141676.png&#34; alt=&#34;Pasted image 20230621154506.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抽象类不可被实例化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类不可被实例化&#34;&gt;#&lt;/a&gt; 抽象类不可被实例化&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png&#34; alt=&#34;Pasted image 20230621154709.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#抽象类之中的抽象函数必须在子类写好实现的方法体&#34;&gt;#&lt;/a&gt; 抽象类之中的抽象函数必须在&lt;mark&gt;子类写好实现的方法体&lt;/mark&gt;&lt;/h2&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html</id>
+        <title>c#/封装</title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html"/>
+        <content type="html">&lt;h2 id=&#34;封装的主要目的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封装的主要目的&#34;&gt;#&lt;/a&gt; 封装的主要目的&lt;/h2&gt;
+&lt;p&gt;封装的主要目的是将数据和行为组合在一个单元中，并对外部隐藏数据的实现细节，只暴露必要的接口供外部访问。这样可以提高代码的可维护性、可重用性和安全性。&lt;/p&gt;
+&lt;p&gt;封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。&lt;/p&gt;
+&lt;p&gt;在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。&lt;/p&gt;
+</content>
+        <category term="语言学习" />
+        <category term="笔记" />
+        <category term="C#" />
+        <updated>2023-06-22T16:39:59.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html</id>
+        <title>c#/静态类</title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html"/>
+        <content type="html">&lt;p&gt;静态变量不可以通过实例来访问，只能通过类名，因为他是共有的。&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139796.png&#34; alt=&#34;Pasted image 20230620180951.png&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230140156.png&#34; alt=&#34;Pasted image 20230620181011.png&#34;&gt;&lt;br&gt;
+ 上面是错误示范&lt;br&gt;
+&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141887.png&#34; alt=&#34;Pasted image 20230620181325.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;应该使用 MyClass3 这个类名而不是 myClass3 这个实例&lt;/p&gt;
 </content>
         <category term="语言学习" />
         <category term="笔记" />
