@@ -434,6 +434,21 @@ public emAction Action;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbe
         <updated>2023-10-03T16:01:18.384Z</updated>
     </entry>
     <entry>
+        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html"/>
+        <content type="html"></content>
+        <updated>2023-10-03T16:01:18.383Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Func%20%E5%A7%94%E6%89%98.html</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Func%20%E5%A7%94%E6%89%98.html"/>
+        <content type="html">&lt;p&gt;Func 必须要返回值&lt;/p&gt;
+</content>
+        <updated>2023-10-03T16:01:18.383Z</updated>
+    </entry>
+    <entry>
         <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html</id>
         <title></title>
         <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html"/>
@@ -554,31 +569,16 @@ public class Delegate_ex : MonoBehaviour
         <updated>2023-10-03T16:01:18.383Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Func%20%E5%A7%94%E6%89%98.html</id>
+        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html</id>
         <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Func%20%E5%A7%94%E6%89%98.html"/>
-        <content type="html">&lt;p&gt;Func 必须要返回值&lt;/p&gt;
-</content>
-        <updated>2023-10-03T16:01:18.383Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html"/>
+        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html"/>
         <content type="html"></content>
-        <updated>2023-10-03T16:01:18.383Z</updated>
+        <updated>2023-10-03T16:01:18.382Z</updated>
     </entry>
     <entry>
         <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html</id>
         <title></title>
         <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html"/>
-        <content type="html"></content>
-        <updated>2023-10-03T16:01:18.382Z</updated>
-    </entry>
-    <entry>
-        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html"/>
         <content type="html"></content>
         <updated>2023-10-03T16:01:18.382Z</updated>
     </entry>
@@ -728,13 +728,6 @@ Console.WriteLine(shape4.GetArea()); &amp;#x2F;&amp;#x2F; 输出：25&lt;span 
         <updated>2023-10-03T16:01:18.379Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html"/>
-        <content type="html"></content>
-        <updated>2023-10-03T16:01:18.378Z</updated>
-    </entry>
-    <entry>
         <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html</id>
         <title></title>
         <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html"/>
@@ -743,6 +736,13 @@ Console.WriteLine(shape4.GetArea()); &amp;#x2F;&amp;#x2F; 输出：25&lt;span 
 &lt;p&gt;封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。&lt;/p&gt;
 &lt;p&gt;在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。&lt;/p&gt;
 </content>
+        <updated>2023-10-03T16:01:18.378Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html"/>
+        <content type="html"></content>
         <updated>2023-10-03T16:01:18.378Z</updated>
     </entry>
     <entry>
@@ -1036,14 +1036,6 @@ std::cin‘&lt;/p&gt;
         <updated>2023-10-03T16:01:18.360Z</updated>
     </entry>
     <entry>
-        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html</id>
-        <title></title>
-        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html"/>
-        <content type="html">&lt;h1 id=&#34;一定要记得log的l大写&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一定要记得log的l大写&#34;&gt;#&lt;/a&gt; 一定要记得 Log 的 L 大写！！！！&lt;/h1&gt;
-</content>
-        <updated>2023-10-03T16:01:18.359Z</updated>
-    </entry>
-    <entry>
         <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html</id>
         <title></title>
         <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html"/>
@@ -1080,6 +1072,14 @@ Polygon polygon &amp;#x3D; new Rectangle();
 
 polygon.Purarea(); &amp;#x2F;&amp;#x2F; 输出：Calculate the area of a rectangle.&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在这个示例中，我们定义了一个抽象类 &lt;code&gt;Polygon&lt;/code&gt;  和一个非抽象子类 &lt;code&gt;Rectangle&lt;/code&gt; ，它们都实现了 &lt;code&gt;Purarea&lt;/code&gt;  方法。在使用示例中，我们创建了一个 &lt;code&gt;Rectangle&lt;/code&gt;  对象，并将其赋值给 &lt;code&gt;Polygon&lt;/code&gt;  类型的变量 &lt;code&gt;polygon&lt;/code&gt; 。然后，我们调用 &lt;code&gt;polygon.Purarea()&lt;/code&gt;  方法，它会调用 &lt;code&gt;Rectangle&lt;/code&gt;  类中的 &lt;code&gt;Purarea&lt;/code&gt;  方法，并输出 &lt;code&gt;Calculate the area of a rectangle.&lt;/code&gt; 。&lt;/p&gt;
+</content>
+        <updated>2023-10-03T16:01:18.359Z</updated>
+    </entry>
+    <entry>
+        <id>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html</id>
+        <title></title>
+        <link rel="alternate" href="https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html"/>
+        <content type="html">&lt;h1 id=&#34;一定要记得log的l大写&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一定要记得log的l大写&#34;&gt;#&lt;/a&gt; 一定要记得 Log 的 L 大写！！！！&lt;/h1&gt;
 </content>
         <updated>2023-10-03T16:01:18.359Z</updated>
     </entry>

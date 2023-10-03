@@ -152,11 +152,11 @@
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html",
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.383Z",
-            "content_html": "<h2 id=\"action的委托不能有返回值\"><a class=\"markdownIt-Anchor\" href=\"#action的委托不能有返回值\">#</a> Action 的委托不能有返回值</h2>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">using System.Collections;\n\nusing System.Collections.Generic;\n\nusing UnityEngine;\n\nusing System;\n\n  \n\n&#x2F;&#x2F;Action是一个委托，它是没有返回值的泛型委托，它可以用来替代没有参数和返回值的委托\n\npublic class Delegate_ex : MonoBehaviour\n\n&#123;\n\n    public delegate void Mydelegate1(int a,int b);\n\n    public delegate int Mydelegate2();\n\n    public delegate void Mydelegate3&lt;T&gt;(T a);\n\n    &#x2F;&#x2F; Start is called before the first frame update\n\n    void Start()\n\n    &#123;\n\n        Mydelegate1 showAdd &#x3D; Add;\n\n        showAdd(1,2);\n\n        Action showAdd2 &#x3D; Subtract;\n\n        showAdd2();\n\n        Action&lt;int,int&gt; showAdd3 &#x3D; Add;\n\n        showAdd3(1,2);\n\n        Mydelegate2 Showten &#x3D; ten;\n\n        int a&#x3D;Showten();\n\n        Debug.Log(a);\n\n        Mydelegate3&lt;string&gt;show3&#x3D;Show3;\n\n        show3(&quot;Show3&quot;);\n\n        Action&lt;string&gt; show4 &#x3D; Show3;\n\n        show4(&quot;Hello World&quot;);\n\n        Action show5 &#x3D; Show4;&#x2F;&#x2F;Action是一个委托，它是没有返回值的泛型委托，它可以用来替代没有参数和返回值的委托\n\n        Mydelegate2 show6 &#x3D; Show4;\n\n        int b&#x3D;show6();\n\n        Debug.Log(b);\n\n    &#125;\n\n    void Update()\n\n    &#123;\n\n    &#125;\n\n    public void Add(int a,int b)\n\n    &#123;\n\n        Debug.Log(a+b);\n\n    &#125;\n\n    public void Subtract()\n\n    &#123;\n\n        Debug.Log(&quot;Subtract&quot;);\n\n    &#125;\n\n    public int ten()\n\n    &#123;\n\n        return 10;\n\n    &#125;\n\n    public void Show3(string a)\n\n    &#123;\n\n        Debug.Log(a);\n\n    &#125;\n\n    public int Show4()（这个语段是错误的）&#x2F;&#x2F;Action委托不可以用这个函数，因为Action委托是没有返回值的泛型委托，而这个函数有返回值\n\n    &#123;\n\n        return 114514;\n\n    &#125;\n\n&#125;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<h2 id=\"action-是没有返回值的泛型委托\"><a class=\"markdownIt-Anchor\" href=\"#action-是没有返回值的泛型委托\">#</a> Action 是<mark>没有返回值</mark>的泛型委托</h2>\n",
+            "content_html": "",
             "tags": []
         },
         {
@@ -168,24 +168,24 @@
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/StringBuilder.html",
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/%E5%A7%94%E6%89%98/Action%E5%A7%94%E6%89%98.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.383Z",
-            "content_html": "",
+            "content_html": "<h2 id=\"action的委托不能有返回值\"><a class=\"markdownIt-Anchor\" href=\"#action的委托不能有返回值\">#</a> Action 的委托不能有返回值</h2>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">using System.Collections;\n\nusing System.Collections.Generic;\n\nusing UnityEngine;\n\nusing System;\n\n  \n\n&#x2F;&#x2F;Action是一个委托，它是没有返回值的泛型委托，它可以用来替代没有参数和返回值的委托\n\npublic class Delegate_ex : MonoBehaviour\n\n&#123;\n\n    public delegate void Mydelegate1(int a,int b);\n\n    public delegate int Mydelegate2();\n\n    public delegate void Mydelegate3&lt;T&gt;(T a);\n\n    &#x2F;&#x2F; Start is called before the first frame update\n\n    void Start()\n\n    &#123;\n\n        Mydelegate1 showAdd &#x3D; Add;\n\n        showAdd(1,2);\n\n        Action showAdd2 &#x3D; Subtract;\n\n        showAdd2();\n\n        Action&lt;int,int&gt; showAdd3 &#x3D; Add;\n\n        showAdd3(1,2);\n\n        Mydelegate2 Showten &#x3D; ten;\n\n        int a&#x3D;Showten();\n\n        Debug.Log(a);\n\n        Mydelegate3&lt;string&gt;show3&#x3D;Show3;\n\n        show3(&quot;Show3&quot;);\n\n        Action&lt;string&gt; show4 &#x3D; Show3;\n\n        show4(&quot;Hello World&quot;);\n\n        Action show5 &#x3D; Show4;&#x2F;&#x2F;Action是一个委托，它是没有返回值的泛型委托，它可以用来替代没有参数和返回值的委托\n\n        Mydelegate2 show6 &#x3D; Show4;\n\n        int b&#x3D;show6();\n\n        Debug.Log(b);\n\n    &#125;\n\n    void Update()\n\n    &#123;\n\n    &#125;\n\n    public void Add(int a,int b)\n\n    &#123;\n\n        Debug.Log(a+b);\n\n    &#125;\n\n    public void Subtract()\n\n    &#123;\n\n        Debug.Log(&quot;Subtract&quot;);\n\n    &#125;\n\n    public int ten()\n\n    &#123;\n\n        return 10;\n\n    &#125;\n\n    public void Show3(string a)\n\n    &#123;\n\n        Debug.Log(a);\n\n    &#125;\n\n    public int Show4()（这个语段是错误的）&#x2F;&#x2F;Action委托不可以用这个函数，因为Action委托是没有返回值的泛型委托，而这个函数有返回值\n\n    &#123;\n\n        return 114514;\n\n    &#125;\n\n&#125;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<h2 id=\"action-是没有返回值的泛型委托\"><a class=\"markdownIt-Anchor\" href=\"#action-是没有返回值的泛型委托\">#</a> Action 是<mark>没有返回值</mark>的泛型委托</h2>\n",
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html",
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.382Z",
             "content_html": "",
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/FileStream.html",
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/IO%E6%93%8D%E4%BD%9C/String.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.382Z",
             "content_html": "",
@@ -232,19 +232,19 @@
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html",
-            "title": "",
-            "date_published": "2023-10-03T16:01:18.378Z",
-            "content_html": "",
-            "tags": []
-        },
-        {
             "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html",
             "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.378Z",
             "content_html": "<h2 id=\"封装的主要目的\"><a class=\"markdownIt-Anchor\" href=\"#封装的主要目的\">#</a> 封装的主要目的</h2>\n<p>封装的主要目的是将数据和行为组合在一个单元中，并对外部隐藏数据的实现细节，只暴露必要的接口供外部访问。这样可以提高代码的可维护性、可重用性和安全性。</p>\n<p>封装可以防止外部代码直接访问和修改对象的内部状态，从而避免了意外的数据修改和错误的数据访问。同时，封装还可以隐藏对象的实现细节，使得对象的实现可以自由地修改，而不会影响到外部代码的使用。</p>\n<p>在面向对象编程中，封装是三大特性之一，另外两个是继承和多态。封装是面向对象编程的基础，它可以使得代码更加模块化、可维护性更高、可重用性更好，从而提高代码的质量和效率。</p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/CsharpOOP/Class%E7%B1%BB/%E5%A4%9A%E6%80%81.html",
+            "title": "",
+            "date_published": "2023-10-03T16:01:18.378Z",
+            "content_html": "",
             "tags": []
         },
         {
@@ -360,19 +360,19 @@
             "tags": []
         },
         {
-            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html",
-            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html",
-            "title": "",
-            "date_published": "2023-10-03T16:01:18.359Z",
-            "content_html": "<h1 id=\"一定要记得log的l大写\"><a class=\"markdownIt-Anchor\" href=\"#一定要记得log的l大写\">#</a> 一定要记得 Log 的 L 大写！！！！</h1>\n",
-            "tags": []
-        },
-        {
             "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html",
             "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html",
             "title": "",
             "date_published": "2023-10-03T16:01:18.359Z",
             "content_html": "<p><mark>抽象方法只能在抽象类中定义</mark><br>\n这个错误提示是因为您在抽象类 <code>Polygon</code>  中声明了一个抽象方法 <code>Purarea</code> ，但是没有为它提供方法体。在 C# 中，抽象方法必须以分号结尾，并且不能有方法体，因为它们没有实现，必须在子类中实现。</p>\n<p>要解决这个问题，您需要为 <code>Purarea</code>  方法提供方法体，或者将 <code>Polygon</code>  类声明为抽象类，以便子类可以实现 <code>Purarea</code>  方法。</p>\n<p>以下是一个示例，演示了如何在 <code>Polygon</code>  类中声明抽象方法：</p>\n<pre class=\"line-numbers language-CS\" data-language=\"CS\"><code class=\"language-CS\">\nabstract class Polygon\n\n&#123;\n\n    public abstract void Purarea();\n\n&#125;\n\nclass Rectangle : Polygon\n\n&#123;\n\n    public override void Purarea()\n\n    &#123;\n\n        Console.WriteLine(&quot;Calculate the area of a rectangle.&quot;);\n\n    &#125;\n\n&#125;\n\n&#x2F;&#x2F; 使用示例\n\nPolygon polygon &#x3D; new Rectangle();\n\npolygon.Purarea(); &#x2F;&#x2F; 输出：Calculate the area of a rectangle.<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>在这个示例中，我们定义了一个抽象类 <code>Polygon</code>  和一个非抽象子类 <code>Rectangle</code> ，它们都实现了 <code>Purarea</code>  方法。在使用示例中，我们创建了一个 <code>Rectangle</code>  对象，并将其赋值给 <code>Polygon</code>  类型的变量 <code>polygon</code> 。然后，我们调用 <code>polygon.Purarea()</code>  方法，它会调用 <code>Rectangle</code>  类中的 <code>Purarea</code>  方法，并输出 <code>Calculate the area of a rectangle.</code> 。</p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html",
+            "url": "https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/Bug%E8%AE%B0%E5%BD%95%EF%BC%88%E7%BA%AA%E5%BF%B5%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/BUG/Debug.Log.html",
+            "title": "",
+            "date_published": "2023-10-03T16:01:18.359Z",
+            "content_html": "<h1 id=\"一定要记得log的l大写\"><a class=\"markdownIt-Anchor\" href=\"#一定要记得log的l大写\">#</a> 一定要记得 Log 的 L 大写！！！！</h1>\n",
             "tags": []
         },
         {
