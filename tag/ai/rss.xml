@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>CenYi • Posts by &#34;ai&#34; tag</title>
+        <link>https://imcenyi.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 20 Oct 2023 23:59:59 +0800</pubDate>
+        <lastBuildDate>Fri, 20 Oct 2023 23:59:59 +0800</lastBuildDate>
+        <category>study</category>
+        <category>AI</category>
+        <item>
+            <guid isPermalink="true">https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/(%E9%9D%A2%E5%90%91AI%E5%AD%A6%E4%B9%A0%EF%BC%89%E9%9B%B6%E6%95%A3%E6%A6%82%E5%BF%B5%EF%BC%88%E5%A4%A7%E5%A4%9A%E4%B8%BA%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C&amp;%E5%9B%9E%E8%B0%83.html</guid>
+            <title>零散概念</title>
+            <link>https://imcenyi.github.io/post/obsidian/Is%20MyGo(CY%E5%8F%98%E5%BC%BA%E4%B9%8B%E8%B7%AF/(%E9%9D%A2%E5%90%91AI%E5%AD%A6%E4%B9%A0%EF%BC%89%E9%9B%B6%E6%95%A3%E6%A6%82%E5%BF%B5%EF%BC%88%E5%A4%A7%E5%A4%9A%E4%B8%BA%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C&amp;%E5%9B%9E%E8%B0%83.html</link>
+            <category>study</category>
+            <category>AI</category>
+            <pubDate>Fri, 20 Oct 2023 23:59:59 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;异步操作asynchronous-operation&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#异步操作asynchronous-operation&#34;&gt;#&lt;/a&gt; 异步操作（Asynchronous Operation）&lt;/h3&gt;
+&lt;p&gt;想象一下，你去咖啡店点了一杯咖啡。如果这是一个&lt;strong&gt;同步&lt;/strong&gt;操作，你会站在那里等待咖啡做好，期间你不能做其他事情，直到咖啡递到你手中。但如果是一个&lt;strong&gt;异步&lt;/strong&gt;操作，你点完咖啡后可以找个地方坐下、看书或玩手机，等咖啡做好了，店员会叫你。这样，你不用一直等待，可以利用这段时间做其他事情。&lt;/p&gt;
+&lt;p&gt;在计算机编程中，异步操作的概念类似。程序在请求某个需要时间的操作（如读取文件、下载数据或加载场景）时，不会停下来等待操作完成，而是继续执行其他任务。当那个操作完成时，它会得到通知。&lt;/p&gt;
+&lt;h3 id=&#34;回调callback&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#回调callback&#34;&gt;#&lt;/a&gt; 回调（Callback）&lt;/h3&gt;
+&lt;p&gt;还是上面的咖啡店例子，当你的咖啡做好了，店员会叫你。这个 “叫你” 的动作，就是一个&lt;strong&gt;回调&lt;/strong&gt;。它是咖啡店告诉你：“嘿，你的咖啡好了！”&lt;/p&gt;
+&lt;p&gt;在编程中，回调是一个函数或方法，它会在某个任务完成后被自动调用。当你启动一个异步操作时，你可以提供一个回调函数，这样当操作完成（或出现错误）时，这个函数就会被执行。&lt;/p&gt;
+&lt;p&gt;例如，你可能会告诉程序：“去加载这个场景，加载完成后，请执行这个回调函数来告诉我。” 当场景加载完成，你的回调函数就会被自动调用，你可以在其中执行一些后续操作，如显示一个 “加载完成” 的提示。&lt;/p&gt;
+&lt;p&gt;总结一下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;异步操作&lt;/strong&gt;就像是你在等待咖啡时可以做其他事情，而不是站在那里等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;回调&lt;/strong&gt;就像是咖啡做好后店员叫你的动作，告诉你任务已经完成了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;回调函数（Callback Function）是一种在某个操作（通常是异步操作）完成后被自动执行的函数。它的主要目的是允许程序知道某个任务已经完成，并允许程序在任务完成后执行特定的操作或处理。&lt;br&gt;
+在异步编程中，由于我们不知道操作何时完成，回调函数提供了一种机制来响应这些完成的操作。当异步操作完成时，回调函数被调用，通常带有操作的结果或任何相关的错误信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例如，当你从网络下载一个文件时，你可能会提供一个回调函数来处理下载完成后的操作，如保存文件、更新用户界面或处理任何下载过程中的错误。&lt;/p&gt;
+&lt;p&gt;简而言之，回调函数就像是一个 “&lt;em&gt;通知&lt;/em&gt;” 或 “&lt;em&gt;警报&lt;/em&gt;”，告诉程序：“嘿，你之前启动的那个操作已经完成了，现在你可以做一些后续的事情了！”&lt;/p&gt;
+&lt;h2 id=&#34;协程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#协程&#34;&gt;#&lt;/a&gt; &lt;strong&gt;协程&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;协程coroutine&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#协程coroutine&#34;&gt;#&lt;/a&gt; 协程（Coroutine）&lt;/h3&gt;
+&lt;p&gt;协程是一种编程构造，它扩展了常规的子程序（或函数）的概念。与子程序不同，协程允许多个入口点和暂停及后续恢复执行的能力。&lt;/p&gt;
+&lt;p&gt;协程的关键特点是它可以在任何给定的点暂停执行（通常称为 “挂起”），并在稍后的某个时刻从暂停的地方恢复执行。这使得协程非常适合用于异步编程，因为它们可以在等待某些资源（如 I/O 操作、网络请求等）时挂起，而不会阻塞整个程序或线程。&lt;/p&gt;
+&lt;h3 id=&#34;协程与异步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#协程与异步&#34;&gt;#&lt;/a&gt; 协程与异步&lt;/h3&gt;
+&lt;p&gt;协程本身不是异步的，但它们经常被用于异步编程。协程提供了一种更直观、更简洁的方式来处理异步操作，特别是在需要多个异步步骤的情况下。&lt;/p&gt;
+&lt;p&gt;例如，在 Python 中， &lt;code&gt;asyncio&lt;/code&gt;  库使用 &lt;code&gt;async&lt;/code&gt;  和 &lt;code&gt;await&lt;/code&gt;  关键字提供了协程支持，使得异步编程变得更加简单和直观。&lt;/p&gt;
+&lt;h3 id=&#34;结论&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#结论&#34;&gt;#&lt;/a&gt; 结论&lt;/h3&gt;
+&lt;p&gt;协程本身不等同于异步，但它们为异步编程提供了强大的工具。通过使用协程，开发者可以更容易地编写异步代码，而不必深入了解回调、Promise 或其他复杂的异步模式。&lt;/p&gt;
+&lt;h2 id=&#34;协程多线程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#协程多线程&#34;&gt;#&lt;/a&gt; &lt;strong&gt;协程 &amp;amp; 多线程&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;协程coroutine-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#协程coroutine-2&#34;&gt;#&lt;/a&gt; 协程（Coroutine）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;轻量级&lt;/strong&gt;：协程是程序中的构造，不依赖于操作系统的线程。因此，创建和切换协程的开销通常比线程小得多。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;协作式多任务&lt;/strong&gt;：协程是协作式的，意味着在任何给定时间只有一个协程在执行。一个协程必须显式地让出控制权，以便其他协程可以运行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;没有并行性&lt;/strong&gt;：由于协程是在单个线程上运行的，它们不会真正并行执行。但它们可以用于异步操作，如 I/O 操作，而不会阻塞主线程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制流&lt;/strong&gt;：协程可以保存其执行状态（例如局部变量的值），这意味着它们可以在稍后的某个时刻从暂停的地方恢复执行。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;多线程multithreading&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#多线程multithreading&#34;&gt;#&lt;/a&gt; 多线程（Multithreading）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;重量级&lt;/strong&gt;：线程是操作系统级别的实体，因此创建、同步和切换线程的开销通常比协程大。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;抢占式多任务&lt;/strong&gt;：线程是抢占式的，这意味着操作系统可以在任何时候中断一个线程并开始执行另一个线程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;真正的并行性&lt;/strong&gt;：在多核处理器上，多个线程可以真正并行执行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;同步问题&lt;/strong&gt;：由于线程可以并行执行，它们可能会访问和修改共享资源，这可能导致竞态条件和其他同步问题。因此，线程间的同步和通信通常比协程更复杂。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;协程&lt;/strong&gt;是轻量级的、协作式的并发构造，适合于 I/O 密集型任务和需要高效上下文切换的场景。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多线程&lt;/strong&gt;是重量级的、抢占式的并发构造，适合于 CPU 密集型任务和需要真正并行执行的场景。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
