@@ -29,18 +29,6 @@
             ]
         },
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html",
-            "title": "c#/public变量的赋值",
-            "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<p>如果在 Unity 引擎中的对象中挂在的脚本里。<br>\n有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。<br>\n这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。</p>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">    public enum emAction\n\n    &#123;\n\n        None&#x3D;0,\n\n        GetUp,&#x2F;&#x2F;1\n\n        Wash,&#x2F;&#x2F;2\n\n        Eat,&#x2F;&#x2F;3\n\n        Work,&#x2F;&#x2F;4\n\n    &#125;\n\n    public emAction mAction &#x3D; emAction.Work;\n    Debug.Log((int)mAction);<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>我们对 <code>mAction</code>  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png\" alt=\"Pasted image 20230616154518.png\"></p>\n<p>如果我们在脚本的选项中，选择了 mAction 的<mark>初值</mark>，那么这个值将覆盖脚本代码中的<mark>初始值</mark>（注意，只是初始值）。</p>\n<p>上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 <code>mAction</code>  所附的 Work。所以打印出来的还是 None 的 0。</p>\n",
-            "tags": [
-                "语言学习",
-                "笔记",
-                "C#"
-            ]
-        },
-        {
             "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html",
             "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E8%AE%BF%E9%97%AE%E7%AD%89%E7%BA%A7.html",
             "title": "c#/访问等级",
@@ -53,11 +41,11 @@
             ]
         },
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html",
-            "title": "c#/抽象方法（abstruct）和虚方法(virtual)的区别",
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Unity%E5%BC%95%E6%93%8E/public%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC.html",
+            "title": "c#/public变量的赋值",
             "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<p><mark>实际上虚函数就类似于初省值</mark></p>\n<h3 id=\"抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现\"><a class=\"markdownIt-Anchor\" href=\"#抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现\">#</a> <mark>抽象函数只能定义在抽象类中，并且不能在基类中写入方法体，只能写在子类实现</mark></h3>\n<p>抽象方法和虚函数都是面向对象编程中的重要概念，它们都可以在基类中声明，然后在派生类中进行实现。它们的主要区别在于：</p>\n<ol>\n<li>抽象方法必须在派生类中进行实现，而虚函数可以选择在派生类中进行重写。</li>\n<li>抽象方法没有实现，只有方法签名，而虚函数有默认的实现 ==（必须）==，可以在基类中提供。</li>\n<li>抽象方法只能在抽象类中声明，而虚函数可以在普通的类中声明。</li>\n</ol>\n<p>下面是一个示例，演示了如何在抽象类中声明抽象方法和在普通类中声明虚函数：</p>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">abstract class Shape\n\n&#123;\n\n    public abstract double GetArea();&#x2F;&#x2F;这里的方法体必须是空\n\n&#125;\n\nclass Rectangle : Shape\n\n&#123;\n\n    public double Width &#123; get; set; &#125;\n\n    public double Height &#123; get; set; &#125;\n\n    public override double GetArea()&#x2F;&#x2F;子类写入方法体实现\n\n    &#123;\n\n        return Width * Height;\n\n    &#125;\n\n&#125;\nclass Circle : Shape\n\n&#123;\n\n    public double Radius &#123; get; set; &#125;\n\n    public override double GetArea(）\n\n    &#123;\n\n        return Math.PI * Radius * Radius;\n\n    &#125;\n\n&#125;\n\nclass Square : Shape\n\n&#123;\n\n    public double Side &#123; get; set; &#125;\n\n    public override double GetArea()\n\n    &#123;\n\n        return Side * Side;\n\n    &#125;\n\n&#125;\n\nclass Triangle : Shape\n\n&#123;\n\n    public double Base &#123; get; set; &#125;\n\n    public double Height &#123; get; set; &#125;\n\n    public override double GetArea()\n\n    &#123;\n\n        return 0.5 * Base * Height;\n\n    &#125;\n\n&#125;\n\n&#x2F;&#x2F; 使用示例\n\nShape shape1 &#x3D; new Rectangle &#123; Width &#x3D; 10, Height &#x3D; 20 &#125;;\n\nShape shape2 &#x3D; new Circle &#123; Radius &#x3D; 5 &#125;;\n\nShape shape3 &#x3D; new Square &#123; Side &#x3D; 10 &#125;;\n\nShape shape4 &#x3D; new Triangle &#123; Base &#x3D; 10, Height &#x3D; 5 &#125;;\n\nConsole.WriteLine(shape1.GetArea()); &#x2F;&#x2F; 输出：200\n\nConsole.WriteLine(shape2.GetArea()); &#x2F;&#x2F; 输出：78.53981633974483\n\nConsole.WriteLine(shape3.GetArea()); &#x2F;&#x2F; 输出：100\n\nConsole.WriteLine(shape4.GetArea()); &#x2F;&#x2F; 输出：25<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>在这个示例中，我们定义了一个抽象类 <code>Shape</code>  和四个子类 <code>Rectangle</code> 、 <code>Circle</code> 、 <code>Square</code>  和 <code>Triangle</code> ，它们都重写了 <code>GetArea</code>  方法。 <code>GetArea</code>  方法是一个抽象方法，必须在子类中实现。在使用示例中，我们创建了四个不同的形状对象，并分别调用它们的 <code>GetArea</code>  方法，输出了它们的面积。</p>\n<p><code>abstract</code>  和 <code>virtual</code>  都是 C# 中用于实现多态的关键字，它们的主要区别在于：</p>\n<ol>\n<li><code>abstract</code>  用于声明抽象方法，它必须在派生类中进行实现，而 <code>virtual</code>  用于声明虚方法，它可以在派生类中进行重写，但不是必须的。</li>\n<li><code>abstract</code>  方法没有实现，只有方法签名，而 <code>virtual</code>  方法有默认的实现，可以在基类中提供。</li>\n<li><code>abstract</code>  方法只能在抽象类中声明，而 <code>virtual</code>  方法可以在普通的类中声明。</li>\n</ol>\n",
+            "content_html": "<p>如果在 Unity 引擎中的对象中挂在的脚本里。<br>\n有 public 访问修饰符。会在脚本模块下看到这个变量，并进行赋值。<br>\n这个赋值的优先级很高，会覆盖掉脚本代码之中初始化定义的赋值。</p>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">    public enum emAction\n\n    &#123;\n\n        None&#x3D;0,\n\n        GetUp,&#x2F;&#x2F;1\n\n        Wash,&#x2F;&#x2F;2\n\n        Eat,&#x2F;&#x2F;3\n\n        Work,&#x2F;&#x2F;4\n\n    &#125;\n\n    public emAction mAction &#x3D; emAction.Work;\n    Debug.Log((int)mAction);<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>我们对 <code>mAction</code>  的初始划定义是 Work，照理来说的应该在终端打印出 4，但实际上。<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139957.png\" alt=\"Pasted image 20230616154518.png\"></p>\n<p>如果我们在脚本的选项中，选择了 mAction 的<mark>初值</mark>，那么这个值将覆盖脚本代码中的<mark>初始值</mark>（注意，只是初始值）。</p>\n<p>上面那个举得实例中，我们在 Unity 选择了 None 覆盖了我们初始化定义 <code>mAction</code>  所附的 Work。所以打印出来的还是 None 的 0。</p>\n",
             "tags": [
                 "语言学习",
                 "笔记",
@@ -77,18 +65,6 @@
             ]
         },
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
-            "title": "c#/抽象函数",
-            "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png\" alt=\"Pasted image 20230621154048.png\"><br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141676.png\" alt=\"Pasted image 20230621154506.png\"></p>\n<h2 id=\"抽象类不可被实例化\"><a class=\"markdownIt-Anchor\" href=\"#抽象类不可被实例化\">#</a> 抽象类不可被实例化</h2>\n<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png\" alt=\"Pasted image 20230621154709.png\"></p>\n<h2 id=\"抽象类之中的抽象函数必须在子类写好实现的方法体\"><a class=\"markdownIt-Anchor\" href=\"#抽象类之中的抽象函数必须在子类写好实现的方法体\">#</a> 抽象类之中的抽象函数必须在<mark>子类写好实现的方法体</mark></h2>\n",
-            "tags": [
-                "语言学习",
-                "笔记",
-                "C#"
-            ]
-        },
-        {
             "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html",
             "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E5%B0%81%E8%A3%85.html",
             "title": "c#/封装",
@@ -101,11 +77,11 @@
             ]
         },
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html",
-            "title": "c#/静态类",
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/Class%E7%B1%BB/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%88abstruct%EF%BC%89%E5%92%8C%E8%99%9A%E6%96%B9%E6%B3%95(virtual)%E7%9A%84%E5%8C%BA%E5%88%AB.html",
+            "title": "c#/抽象方法（abstruct）和虚方法(virtual)的区别",
             "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<p>静态变量不可以通过实例来访问，只能通过类名，因为他是共有的。<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139796.png\" alt=\"Pasted image 20230620180951.png\"><br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230140156.png\" alt=\"Pasted image 20230620181011.png\"><br>\n 上面是错误示范<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141887.png\" alt=\"Pasted image 20230620181325.png\"></p>\n<p>应该使用 MyClass3 这个类名而不是 myClass3 这个实例</p>\n",
+            "content_html": "<p><mark>实际上虚函数就类似于初省值</mark></p>\n<h3 id=\"抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现\"><a class=\"markdownIt-Anchor\" href=\"#抽象函数只能定义在抽象类中并且不能在基类中写入方法体只能写在子类实现\">#</a> <mark>抽象函数只能定义在抽象类中，并且不能在基类中写入方法体，只能写在子类实现</mark></h3>\n<p>抽象方法和虚函数都是面向对象编程中的重要概念，它们都可以在基类中声明，然后在派生类中进行实现。它们的主要区别在于：</p>\n<ol>\n<li>抽象方法必须在派生类中进行实现，而虚函数可以选择在派生类中进行重写。</li>\n<li>抽象方法没有实现，只有方法签名，而虚函数有默认的实现 ==（必须）==，可以在基类中提供。</li>\n<li>抽象方法只能在抽象类中声明，而虚函数可以在普通的类中声明。</li>\n</ol>\n<p>下面是一个示例，演示了如何在抽象类中声明抽象方法和在普通类中声明虚函数：</p>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">abstract class Shape\n\n&#123;\n\n    public abstract double GetArea();&#x2F;&#x2F;这里的方法体必须是空\n\n&#125;\n\nclass Rectangle : Shape\n\n&#123;\n\n    public double Width &#123; get; set; &#125;\n\n    public double Height &#123; get; set; &#125;\n\n    public override double GetArea()&#x2F;&#x2F;子类写入方法体实现\n\n    &#123;\n\n        return Width * Height;\n\n    &#125;\n\n&#125;\nclass Circle : Shape\n\n&#123;\n\n    public double Radius &#123; get; set; &#125;\n\n    public override double GetArea(）\n\n    &#123;\n\n        return Math.PI * Radius * Radius;\n\n    &#125;\n\n&#125;\n\nclass Square : Shape\n\n&#123;\n\n    public double Side &#123; get; set; &#125;\n\n    public override double GetArea()\n\n    &#123;\n\n        return Side * Side;\n\n    &#125;\n\n&#125;\n\nclass Triangle : Shape\n\n&#123;\n\n    public double Base &#123; get; set; &#125;\n\n    public double Height &#123; get; set; &#125;\n\n    public override double GetArea()\n\n    &#123;\n\n        return 0.5 * Base * Height;\n\n    &#125;\n\n&#125;\n\n&#x2F;&#x2F; 使用示例\n\nShape shape1 &#x3D; new Rectangle &#123; Width &#x3D; 10, Height &#x3D; 20 &#125;;\n\nShape shape2 &#x3D; new Circle &#123; Radius &#x3D; 5 &#125;;\n\nShape shape3 &#x3D; new Square &#123; Side &#x3D; 10 &#125;;\n\nShape shape4 &#x3D; new Triangle &#123; Base &#x3D; 10, Height &#x3D; 5 &#125;;\n\nConsole.WriteLine(shape1.GetArea()); &#x2F;&#x2F; 输出：200\n\nConsole.WriteLine(shape2.GetArea()); &#x2F;&#x2F; 输出：78.53981633974483\n\nConsole.WriteLine(shape3.GetArea()); &#x2F;&#x2F; 输出：100\n\nConsole.WriteLine(shape4.GetArea()); &#x2F;&#x2F; 输出：25<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>在这个示例中，我们定义了一个抽象类 <code>Shape</code>  和四个子类 <code>Rectangle</code> 、 <code>Circle</code> 、 <code>Square</code>  和 <code>Triangle</code> ，它们都重写了 <code>GetArea</code>  方法。 <code>GetArea</code>  方法是一个抽象方法，必须在子类中实现。在使用示例中，我们创建了四个不同的形状对象，并分别调用它们的 <code>GetArea</code>  方法，输出了它们的面积。</p>\n<p><code>abstract</code>  和 <code>virtual</code>  都是 C# 中用于实现多态的关键字，它们的主要区别在于：</p>\n<ol>\n<li><code>abstract</code>  用于声明抽象方法，它必须在派生类中进行实现，而 <code>virtual</code>  用于声明虚方法，它可以在派生类中进行重写，但不是必须的。</li>\n<li><code>abstract</code>  方法没有实现，只有方法签名，而 <code>virtual</code>  方法有默认的实现，可以在基类中提供。</li>\n<li><code>abstract</code>  方法只能在抽象类中声明，而 <code>virtual</code>  方法可以在普通的类中声明。</li>\n</ol>\n",
             "tags": [
                 "语言学习",
                 "笔记",
@@ -118,6 +94,30 @@
             "title": "c#/抽象类",
             "date_published": "2023-06-22T16:39:59.000Z",
             "content_html": "<p>/*  抽象类</p>\n<p>1. 抽象类不可以被实例化</p>\n<p>2. 抽象函数只能写在抽象类之中，并且抽象函数不能有方法体</p>\n<p>3. 抽象类的子类必须实现抽象类中的所有抽象函数</p>\n<p>4. 抽象类中可以有非抽象函数</p>\n<p>5. 抽象类可以继承抽象类，但是子类必须实现所有抽象函数</p>\n<p>6. 非抽象类可以继承抽象类，但是子类必须实现所有抽象函数</p>\n<p>*/</p>\n<h2 id=\"密封类\"><a class=\"markdownIt-Anchor\" href=\"#密封类\">#</a> 密封类</h2>\n<p>1. 密封类不可以被继承（他只能是子类）</p>\n<p>2. 密封类不能是抽象的。sealed 和 abstract 是互斥的</p>\n<p>（其实很好理解，密封类不能作为基类，只能是子类</p>\n<p>而抽象类虽然可以既是基类又是子类，但是其中的抽</p>\n<p>象函数是不能在抽象类中写方法体的，必须要在子类</p>\n<p>中实现，这就和密封类的定义【不可被继承，不能有子类】相违背了）</p>\n<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142194.png\" alt=\"Pasted image 20230621161128.png\"></p>\n<h3 id=\"上述报错表明了抽象类和封闭类是互斥的\"><a class=\"markdownIt-Anchor\" href=\"#上述报错表明了抽象类和封闭类是互斥的\">#</a> 上述报错，表明了抽象类和封闭类是互斥的</h3>\n",
+            "tags": [
+                "语言学习",
+                "笔记",
+                "C#"
+            ]
+        },
+        {
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
+            "title": "c#/抽象函数",
+            "date_published": "2023-06-22T16:39:59.000Z",
+            "content_html": "<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png\" alt=\"Pasted image 20230621154048.png\"><br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141676.png\" alt=\"Pasted image 20230621154506.png\"></p>\n<h2 id=\"抽象类不可被实例化\"><a class=\"markdownIt-Anchor\" href=\"#抽象类不可被实例化\">#</a> 抽象类不可被实例化</h2>\n<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141139.png\" alt=\"Pasted image 20230621154709.png\"></p>\n<h2 id=\"抽象类之中的抽象函数必须在子类写好实现的方法体\"><a class=\"markdownIt-Anchor\" href=\"#抽象类之中的抽象函数必须在子类写好实现的方法体\">#</a> 抽象类之中的抽象函数必须在<mark>子类写好实现的方法体</mark></h2>\n",
+            "tags": [
+                "语言学习",
+                "笔记",
+                "C#"
+            ]
+        },
+        {
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E7%B1%BB%E7%9A%84%E6%9B%B4%E5%A4%9A%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F/%E9%9D%99%E6%80%81%E7%B1%BB.html",
+            "title": "c#/静态类",
+            "date_published": "2023-06-22T16:39:59.000Z",
+            "content_html": "<p>静态变量不可以通过实例来访问，只能通过类名，因为他是共有的。<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230139796.png\" alt=\"Pasted image 20230620180951.png\"><br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230140156.png\" alt=\"Pasted image 20230620181011.png\"><br>\n 上面是错误示范<br>\n<img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230141887.png\" alt=\"Pasted image 20230620181325.png\"></p>\n<p>应该使用 MyClass3 这个类名而不是 myClass3 这个实例</p>\n",
             "tags": [
                 "语言学习",
                 "笔记",
