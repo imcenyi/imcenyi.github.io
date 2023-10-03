@@ -14,24 +14,6 @@
         <category>成长</category>
         <category>C#</category>
         <item>
-            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html</guid>
-            <title>c#bug-直接通过vscode运行CS文件报错</title>
-            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html</link>
-            <category>语言学习</category>
-            <category>笔记</category>
-            <category>C#</category>
-            <pubDate>Fri, 23 Jun 2023 00:39:59 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png&#34; alt=&#34;Pasted image 20230614104941.png&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;#&lt;/a&gt; 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。&lt;/h2&gt;
-&lt;h3 id=&#34;1首先是报错的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1首先是报错的原因&#34;&gt;#&lt;/a&gt; 1. 首先是报错的原因&lt;/h3&gt;
-&lt;p&gt;这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。&lt;/p&gt;
-&lt;h2 id=&#34;2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;#&lt;/a&gt; 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错&lt;/h2&gt;
-&lt;p&gt;Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。&lt;br&gt;
-在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。&lt;/p&gt;
-&lt;h2 id=&#34;解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;#&lt;/a&gt; 解决方法，将 scriptcs 所在的目录加入到环境变量当中。&lt;/h2&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html</guid>
             <title>c#bug-抽象方法只能在抽象类中定义</title>
             <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html</link>
@@ -72,6 +54,24 @@ Polygon polygon &amp;#x3D; new Rectangle();
 
 polygon.Purarea(); &amp;#x2F;&amp;#x2F; 输出：Calculate the area of a rectangle.&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在这个示例中，我们定义了一个抽象类 &lt;code&gt;Polygon&lt;/code&gt;  和一个非抽象子类 &lt;code&gt;Rectangle&lt;/code&gt; ，它们都实现了 &lt;code&gt;Purarea&lt;/code&gt;  方法。在使用示例中，我们创建了一个 &lt;code&gt;Rectangle&lt;/code&gt;  对象，并将其赋值给 &lt;code&gt;Polygon&lt;/code&gt;  类型的变量 &lt;code&gt;polygon&lt;/code&gt; 。然后，我们调用 &lt;code&gt;polygon.Purarea()&lt;/code&gt;  方法，它会调用 &lt;code&gt;Rectangle&lt;/code&gt;  类中的 &lt;code&gt;Purarea&lt;/code&gt;  方法，并输出 &lt;code&gt;Calculate the area of a rectangle.&lt;/code&gt; 。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html</guid>
+            <title>c#bug-直接通过vscode运行CS文件报错</title>
+            <link>https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html</link>
+            <category>语言学习</category>
+            <category>笔记</category>
+            <category>C#</category>
+            <pubDate>Fri, 23 Jun 2023 00:39:59 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png&#34; alt=&#34;Pasted image 20230614104941.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢&#34;&gt;#&lt;/a&gt; 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。&lt;/h2&gt;
+&lt;h3 id=&#34;1首先是报错的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1首先是报错的原因&#34;&gt;#&lt;/a&gt; 1. 首先是报错的原因&lt;/h3&gt;
+&lt;p&gt;这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。&lt;/p&gt;
+&lt;h2 id=&#34;2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2那为什么在unity的项目对象中可以直接运行而不会报错&#34;&gt;#&lt;/a&gt; 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错&lt;/h2&gt;
+&lt;p&gt;Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。&lt;br&gt;
+在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。&lt;/p&gt;
+&lt;h2 id=&#34;解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法将scriptcs所在的目录加入到环境变量当中&#34;&gt;#&lt;/a&gt; 解决方法，将 scriptcs 所在的目录加入到环境变量当中。&lt;/h2&gt;
  ]]></description>
         </item>
     </channel>

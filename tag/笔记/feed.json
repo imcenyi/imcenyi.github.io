@@ -5,18 +5,6 @@
     "home_page_url": "https://imcenyi.github.io",
     "items": [
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html",
-            "title": "c#bug-直接通过vscode运行CS文件报错",
-            "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png\" alt=\"Pasted image 20230614104941.png\"></p>\n<h2 id=\"这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢\"><a class=\"markdownIt-Anchor\" href=\"#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢\">#</a> 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。</h2>\n<h3 id=\"1首先是报错的原因\"><a class=\"markdownIt-Anchor\" href=\"#1首先是报错的原因\">#</a> 1. 首先是报错的原因</h3>\n<p>这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。</p>\n<h2 id=\"2那为什么在unity的项目对象中可以直接运行而不会报错\"><a class=\"markdownIt-Anchor\" href=\"#2那为什么在unity的项目对象中可以直接运行而不会报错\">#</a> 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错</h2>\n<p>Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。<br>\n在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。</p>\n<h2 id=\"解决方法将scriptcs所在的目录加入到环境变量当中\"><a class=\"markdownIt-Anchor\" href=\"#解决方法将scriptcs所在的目录加入到环境变量当中\">#</a> 解决方法，将 scriptcs 所在的目录加入到环境变量当中。</h2>\n",
-            "tags": [
-                "语言学习",
-                "笔记",
-                "C#"
-            ]
-        },
-        {
             "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html",
             "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%93%E5%8F%AA%E8%83%BD%E5%9C%A8%E5%AD%90%E7%B1%BB%E4%B8%AD%E5%AE%9E%E7%8E%B0%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E5%86%99%E5%9C%A8%E5%9F%BA%E7%B1%BB%E4%B8%AD.html",
             "title": "c#bug-抽象方法只能在抽象类中定义",
@@ -29,11 +17,11 @@
             ]
         },
         {
-            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html",
-            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html",
-            "title": "c#/条件语句（线性）",
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/BUG/%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87vscode%E8%BF%90%E8%A1%8CCS%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.html",
+            "title": "c#bug-直接通过vscode运行CS文件报错",
             "date_published": "2023-06-22T16:39:59.000Z",
-            "content_html": "<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">    void Func1()\n\n    &#123;\n\n        int value1&#x3D;15;\n\n        if(value1&gt;5)\n\n        &#123;\n\n            Debug.Log(&quot;value1 is greater than 5&quot;);&#x2F;&#x2F;value1满足了第一个条件就执行了，输出语句\n\n        &#125;\n\n        else if(value1&gt;10)\n\n        &#123;\n\n            Debug.Log(&quot;value1 is greater than 10&quot;);&#x2F;&#x2F;由于第一个已经执行了，就终端这一串条件语句，所以虽然满足条件但没有执行\n\n        &#125;\n\n        else\n\n        &#123;\n\n            Debug.Log(&quot;value1 is less than 5&quot;);\n\n        &#125;\n\n    &#125;\n\n&#125;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<h1 id=\"条件检测是线性的只要满足前面的就不会执行后面的\"><a class=\"markdownIt-Anchor\" href=\"#条件检测是线性的只要满足前面的就不会执行后面的\">#</a> 条件检测是线性的，只要满足前面的就不会执行后面的</h1>\n",
+            "content_html": "<p><img src=\"https://cenyi-picture-1317709115.cos.ap-shanghai.myqcloud.com/picture/202306230142390.png\" alt=\"Pasted image 20230614104941.png\"></p>\n<h2 id=\"这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢\"><a class=\"markdownIt-Anchor\" href=\"#这个c脚本文件在unity所开的项目中可以正常运行但为什么直接在vscode运行不行呢\">#</a> 这个 C# 脚本文件在 Unity 所开的项目中可以正常运行，但为什么直接在 vscode 运行不行呢。</h2>\n<h3 id=\"1首先是报错的原因\"><a class=\"markdownIt-Anchor\" href=\"#1首先是报错的原因\">#</a> 1. 首先是报错的原因</h3>\n<p>这个错误提示意味着 PowerShell 无法找到名为 scriptcs 的命令。这通常是因为 scriptcs 没有被正确安装或者没有被添加到系统的 PATH 环境变量中。请确保您已经正确安装了 scriptcs，并将其添加到 PATH 环境变量中。如果您已经安装了 scriptcs 并且将其添加到了 PATH 环境变量中，那么请检查您的命令是否正确拼写。</p>\n<h2 id=\"2那为什么在unity的项目对象中可以直接运行而不会报错\"><a class=\"markdownIt-Anchor\" href=\"#2那为什么在unity的项目对象中可以直接运行而不会报错\">#</a> 2. 那为什么在 Unity 的项目对象中可以直接运行，而不会报错</h2>\n<p>Unity 引擎已经为您配置好了项目所需的环境，包括编译器、库和其他依赖项。在 Unity 中，您可以直接编写 C# 代码，并且 Unity 引擎会自动编译和运行您的代码。因此，您可以在 Unity 中直接运行这段代码，而不需要手动配置环境。<br>\n在 Unity 中使用了 C# 脚本，那么您不需要使用 scriptcs 来运行它们。Unity 引擎会自动编译和运行您的脚本。因此，如果您在 Unity 中使用 C# 脚本，那么将 scriptcs 添加到 PATH 环境变量中不会对您的 Unity 项目造成任何影响。但是，如果您在 Unity 之外的地方使用 scriptcs 运行 C# 脚本，那么您需要将 scriptcs 添加到 PATH 环境变量中。</p>\n<h2 id=\"解决方法将scriptcs所在的目录加入到环境变量当中\"><a class=\"markdownIt-Anchor\" href=\"#解决方法将scriptcs所在的目录加入到环境变量当中\">#</a> 解决方法，将 scriptcs 所在的目录加入到环境变量当中。</h2>\n",
             "tags": [
                 "语言学习",
                 "笔记",
@@ -46,6 +34,18 @@
             "title": "c#/枚举类的访问等级规则",
             "date_published": "2023-06-22T16:39:59.000Z",
             "content_html": "<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\"> enum emAction\n&#123;\n    GetUp,\n    Wash,\n    Eat,\n    Work,\n&#125;\n\npublic emAction Action;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>上面这串代码出现了一个错误，即 <code>emAction</code>  枚举类型的访问修饰符与 <code>mAction</code>  字段的访问修饰符不匹配。具体来说， <code>emAction</code>  枚举类型是默认的（即没有访问修饰符），而 <code>Action</code>  字段是公共的（ <code>public</code> ）。</p>\n<h3 id=\"这违反了c的访问性限制\"><a class=\"markdownIt-Anchor\" href=\"#这违反了c的访问性限制\">#</a> 这违反了 C# 的访问性限制</h3>\n<p>因为一个字段的可访问性不能高于其类型的可访问性。因此，您需要将 <code>emAction</code>  枚举类型的访问修饰符更改为公共的（ <code>public</code> ）或将 <code>mAction</code>  字段的访问修饰符更改为默认 (private 级别) 的（即删除 <code>public</code>  关键字）。</p>\n<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">enum emAction<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p>我们可以看到上面那串代码之中，所定义的 emAction 枚举类。前面没有刻意加上访问修饰符，则默认是 <code>private</code>  访问等级，是最低一级。<br>\n<mark>关于访问等级先后详细看 [[访问等级]]</mark><br>\n 如果 <code>Action</code>  字段是 <code>public</code> ，则将 <code>emAction</code>  枚举类型的可访问性设置为 <code>private</code>  是不合适的，因为这会违反 C# 的访问性规则。一个字段的可访问性不能高于其类型的可访问性。</p>\n<h3 id=\"那为什么c要有这个访问性限制呢-其实也不难理解\"><a class=\"markdownIt-Anchor\" href=\"#那为什么c要有这个访问性限制呢-其实也不难理解\">#</a> 那为什么 C# 要有这个访问性限制呢。其实也不难理解</h3>\n<p>C# 中语段的访问等级不能高于枚举类型的访问等级，是因为一个语段（如字段、属性、方法等）的可访问性依赖于其类型的可访问性。如果一个语段的类型的可访问性比它本身的可访问性更低，那么这个语段就不能被访问，因为它的类型不可访问。</p>\n<p>例如，在这个示例中， <code>mAction</code>  字段的访问修饰符是 <code>public</code> ，而 <code>emAction</code>  枚举类型的访问修饰符是默认的（即 <code>private</code> ）。这违反了 C# 的访问性规则，因为一个字段的可访问性不能高于其类型的可访问性。因此，编译器会报错，提示 <code>emAction</code>  枚举类型的可访问性低于 <code>mAction</code>  字段的可访问性。</p>\n<p>说白了，这个语段的访问，必须要访问到这个枚举类型本身，如果这个语段的访问性比枚举类型高，那么对于这个语段的访问就不成立。</p>\n",
+            "tags": [
+                "语言学习",
+                "笔记",
+                "C#"
+            ]
+        },
+        {
+            "id": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html",
+            "url": "https://imcenyi.github.io/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Csharp/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%88%E7%BA%BF%E6%80%A7%EF%BC%89.html",
+            "title": "c#/条件语句（线性）",
+            "date_published": "2023-06-22T16:39:59.000Z",
+            "content_html": "<pre class=\"line-numbers language-C#\" data-language=\"C#\"><code class=\"language-C#\">    void Func1()\n\n    &#123;\n\n        int value1&#x3D;15;\n\n        if(value1&gt;5)\n\n        &#123;\n\n            Debug.Log(&quot;value1 is greater than 5&quot;);&#x2F;&#x2F;value1满足了第一个条件就执行了，输出语句\n\n        &#125;\n\n        else if(value1&gt;10)\n\n        &#123;\n\n            Debug.Log(&quot;value1 is greater than 10&quot;);&#x2F;&#x2F;由于第一个已经执行了，就终端这一串条件语句，所以虽然满足条件但没有执行\n\n        &#125;\n\n        else\n\n        &#123;\n\n            Debug.Log(&quot;value1 is less than 5&quot;);\n\n        &#125;\n\n    &#125;\n\n&#125;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<h1 id=\"条件检测是线性的只要满足前面的就不会执行后面的\"><a class=\"markdownIt-Anchor\" href=\"#条件检测是线性的只要满足前面的就不会执行后面的\">#</a> 条件检测是线性的，只要满足前面的就不会执行后面的</h1>\n",
             "tags": [
                 "语言学习",
                 "笔记",
